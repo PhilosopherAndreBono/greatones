@@ -1,0 +1,41 @@
+/* nav css 정의 */
+.nav {
+    padding: 1vh 10vw;
+}
+.nav-logo:hover {
+    cursor: pointer;
+    /* border-bottom: solid 4px #5da0d8; */
+}
+.nav-ico-box {
+    display: flex;
+    background-color: #adafaf;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.nav-ico-box:hover {
+    border: solid 2px #999999;
+}
+.nav-style {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu {
+    display: flex;
+}
+.nav-sns {
+    display: flex;
+}
+.nav-menu-text {
+    margin: 0 50px;
+}
+.nav-menu-text:hover {
+    color: #5da0d8;
+    cursor: pointer;
+    border-bottom: solid 4px #5da0d8;
+}
