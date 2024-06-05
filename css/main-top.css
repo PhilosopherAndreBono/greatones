@@ -1,0 +1,50 @@
+body, html {
+  margin : 0 ;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 0;  
+  overflow: hidden;
+  padding-top: 56.25%; /*반응형에서 종횡비 유지*/ 
+}
+
+.video-section iframe {
+  position : absolute;
+  top : 0 ;
+  left : 0 ; 
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.video-content {
+  position : absolute;
+  z-index: 10;
+  color: white;
+  top : 25%;
+  left : 10% ;
+  font-size: 4vw; /* 화면 너비의 4% 로 기본 글자 크기 설정 */
+}
+
+.video-content-hiocoffee {
+  font-weight :800 !important;
+}
+
+@media (max-width: 480px) {
+  .video-content {
+    top: 15%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-content {
+      top: 20%;
+      left: 10%;
+  }
+}
