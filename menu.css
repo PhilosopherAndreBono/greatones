@@ -1,0 +1,32 @@
+.menu-custom-card {
+  background-color: #f4f5f6;
+  border: none;
+  padding: 10px;
+  width: 270px;
+  height: 360px;
+}
+
+.menu-custom-card-img {
+  width: 138px;
+  height: 226px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* 이미지를 카드 중앙에 배치 */
+}
+
+.menu-title {
+  color: #000000;
+  font: 16px NotoSans, sans-serif;
+  padding: 5px 0px;
+}
+
+.menu-ice {
+  color: #000000;
+  font: 12px NotoSans, sans-serif;
+}
+
+@media (min-width: 1496px) {
+  .container {
+    width: 1200px;
+  }
+}
