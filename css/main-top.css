@@ -12,7 +12,7 @@ body, html {
   padding-top: 56.25%; /*반응형에서 종횡비 유지*/ 
 }
 
-.main-top-video-section iframe {
+.main-top-video-section video {
   position : absolute;
   top : 0 ;
   left : 0 ; 
