@@ -1,15 +1,58 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7조</title>
-  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>눈나커피</title>
+    <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/2c827c8cca.js" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
   </head>
 
   <body>
-    <h1>
-        디벨롭 보노
-    </h1>
-    <script src="/js/script.js"></script>
+    <nav class="nav">
+      <div class="nav-style">
+          <div class="nav-logo">
+              <img src="https://hiocoffee.com/sub/img/logo_n.png" style="height: 65px;">
+          </div>
+          <div class="nav-logo-mediaQuery">
+              <img src="./src/navLogo.png" style="height: 65px;">
+          </div>
+          <div class="nav-menu">
+              <h4 class="nav-menu-text">ABOUT</h4>
+              <h4 class="nav-menu-text">MENU</h4>
+              <h4 class="nav-menu-text">COMMUNITY</h4>
+          </div>
+          <div class="nav-sns">
+              <div class="nav-ico-box">
+                  <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+              </div>
+              <div class="nav-ico-box">
+                  <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+              </div>
+              <div class="nav-ico-box">
+                  <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+              </div>
+          </div>
+
+          <!-- 테블릿, 모바일용 nav 오프캔버스 -->
+          <div class="nav-offcanvas">
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+                  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+                      <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                      ...
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   </html>
