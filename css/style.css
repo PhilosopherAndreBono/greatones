@@ -1,0 +1,6 @@
+.new-menu-list {
+    display:flex; 
+    justify-content: space-between;
+}
+               
+.new-menu-list li{width:49.5%; }
