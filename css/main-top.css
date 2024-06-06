@@ -36,14 +36,14 @@ body, html {
 }
 
 @media (max-width: 480px) {
-  .video-content {
+  .main-top-video-lastline {
     top: 15%;
     left: 5%;
   }
 }
 
 @media (max-width: 1024px) {
-  .video-content {
+  .main-top-video-lastline {
       top: 20%;
       left: 10%;
   }
