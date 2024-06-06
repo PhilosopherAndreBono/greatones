@@ -1,0 +1,16 @@
+#drinks-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.drink {
+  background-color: aquamarine;
+}
