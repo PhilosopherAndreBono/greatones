@@ -1,8 +1,10 @@
 @import "reset.css";
 
+body {
+    font-family: 'NotoSans', sans-serif;
+}
 /* nav css 정의 */
 .nav {
-    width: 100vw;
     padding: 1vh 10vw;
 }
 .nav-logo:hover {
@@ -87,3 +89,44 @@
     }
 
 }
+
+
+/* footer css 정의 */
+.footer-container {
+    background-color: #221f20;
+    height: 400px;
+    position : relative;
+    bottom: 0px;
+}
+.footer-items {
+    border: solid 3px red;
+    width: 70vw;
+    height: 40vh;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.footer-menu-container {
+    display: flex;
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.footer-menu {
+    margin: 20px 10px;
+}
+.footer-secondline-container {
+    margin: 13px 30px;
+    display: flex;
+}
+.footer-secondline-location {
+    color: white;
+    margin-left: 30px;
+}
+.footer-copyright {
+    color: #858585;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: small;
+}
+
