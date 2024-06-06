@@ -8,7 +8,6 @@ export default class drinkApp {
   drinkMargin = 30;
   commandDrink;
   currentDrink;
-  mouseOver = false;
   dragging = false;
   prevX = 0;
   prevY = 0;
@@ -66,7 +65,7 @@ export default class drinkApp {
       tag.style.display = "flex";
       tag.style.flexDirection = "column";
       tag.style.alignItems = "center";
-      tag.style.overflow = "hidden"
+      tag.style.overflow = "hidden";
       this.wrapper.appendChild(tag);
 
       const img = document.createElement("img");
@@ -76,7 +75,9 @@ export default class drinkApp {
       img.style.pointerEvents = "none";
       tag.appendChild(img);
 
-      const drink = { index: i, tag: tag, img: img };
+      const position = { left: tag.offsetLeft, top: tag.offsetTop };
+
+      const drink = { index: i, tag: tag, img: img, position: position };
       this.drink.push(drink);
     });
 
@@ -151,29 +152,23 @@ export default class drinkApp {
   }
 
   onMouseOver(drink) {
-    if (!this.mouseOver) {
-      this.mouseOver = true;
+    const tag = drink.tag;
+    const img = drink.img;
 
-      const tag = drink.tag;
-      const img = drink.img;
-  
-      const top = tag.offsetTop - 20;
-      tag.style.top = `${top}px`;
-      img.style.marginTop = "70px";
-    }
+    const top = drink.position.top - 50;
+
+    gsap.to(tag, {top: `${top}px`, duration: 0.5});
+    gsap.to(img, {marginTop: "70px", duration: 0.5});
   }
 
   onMouseLeave(drink) {
-    if (this.mouseOver) {
-      this.mouseOver = false;
+    const tag = drink.tag;
+    const img = drink.img;
 
-      const tag = drink.tag;
-      const img = drink.img;
-  
-      const top = tag.offsetTop + 20;
-      tag.style.top = `${top}px`;
-      img.style.marginTop = "110px";
-    }
+    const top = drink.position.top;
+
+    gsap.to(tag, {top: `${top}px`, duration: 0.5});
+    gsap.to(img, {marginTop: "110px", duration: 0.5});
   }
 
   onPointerDown(e, drink) {
