@@ -49,57 +49,54 @@ body, html {
   }
 }
 
-/* 전환 효과를 부드럽게 조정 */ 
 .main-top-carousel-item {
   transition: transform 1.5s ease, opacity 1.5s ease;
-} 
+} /* 전환 효과를 부드럽게 조정 */ 
 
-/*하이오 커피 메인 세번째 섹션*/ 
-.main-top-value-section {
+/* 하이오 커피 메인 세번째 섹션 */ 
+
+.main-top-section3 {
   font-size: 1.5vw; /* 기본폰트 */ 
   margin: 10vw 5vw 5vw 5vw;
-  border : 2px solid blue;
 }
 
-.main-top-box {
-  border: 1px solid red ;
+.main-top-section3 span {
+  color : #5da0d8 ;
 }
 
+.main-top-section3 img {
+  width: 30%;
+}
 
-.main-top-box-heading {
+.main-top-headline {
   font-size: 4vw;
 }
 
-.main-top-box-middle {
+.main-top-firstline {
   font-size: 2.5vw;
 }
 
-.main-top-box-lastline {
+.main-top-secondline {
   font-size: 1.5vw;
   color: #b6b6b6;
 }
 
-.main-top-value-section span {
-  color : #5da0d8 ;
-}
-
-.main-top-value-cards {
+/* 세번째 세선 - 카드 캐러셀 스타일 */ 
+.main-top-cards {
   display : flex ;
   margin-top : 5vw;
-  border : 1px solid red ; 
 }
 
-.main-top-value-section img {
-  width: 30%;
-}
-
-.main-top-value-cards .card-img-top {
+.main-top-cards .card-img-top {
   display: block;
   margin: 0 auto; /* 요소를 수평 중앙 배치 */ 
 }
 
-.main-top-value-cards .card-title {
+.main-top-cards .card-title {
   font-size: 2.2vw;
   margin-bottom: 1rem;
 }
 
+.main-top-cards p {
+  color : rgb(60, 57, 57); 
+} 
