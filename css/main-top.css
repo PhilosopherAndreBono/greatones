@@ -31,12 +31,8 @@ body, html {
   font-size: 4vw; /* 화면 너비의 4% 로 기본 글자 크기 설정 */
 }
 
-.main-top-video-firstlines {
-  font-weight : 500 !important;
-}
-
 .main-top-video-lastline {
-  font-weight :800 !important;
+  font-size: 5vw;
 }
 
 @media (max-width: 480px) {
@@ -57,3 +53,53 @@ body, html {
 .main-top-carousel-item {
   transition: transform 1.5s ease, opacity 1.5s ease;
 } 
+
+/*하이오 커피 메인 세번째 섹션*/ 
+.main-top-value-section {
+  font-size: 1.5vw; /* 기본폰트 */ 
+  margin: 10vw 5vw 5vw 5vw;
+  border : 2px solid blue;
+}
+
+.main-top-box {
+  border: 1px solid red ;
+}
+
+
+.main-top-box-heading {
+  font-size: 4vw;
+}
+
+.main-top-box-middle {
+  font-size: 2.5vw;
+}
+
+.main-top-box-lastline {
+  font-size: 1.5vw;
+  color: #b6b6b6;
+}
+
+.main-top-value-section span {
+  color : #5da0d8 ;
+}
+
+.main-top-value-cards {
+  display : flex ;
+  margin-top : 5vw;
+  border : 1px solid red ; 
+}
+
+.main-top-value-section img {
+  width: 30%;
+}
+
+.main-top-value-cards .card-img-top {
+  display: block;
+  margin: 0 auto; /* 요소를 수평 중앙 배치 */ 
+}
+
+.main-top-value-cards .card-title {
+  font-size: 2.2vw;
+  margin-bottom: 1rem;
+}
+
