@@ -44,7 +44,214 @@
   }
 }
 
+/* 전환 효과를 부드럽게 조정 */ 
 .main-top-carousel-item {
   transition: transform 1.5s ease, opacity 1.5s ease;
-} /* 전환 효과를 부드럽게 조정 */ 
+} 
+
+/* -- 섹션 공간 -- */ 
+.main-top-section {
+  padding : 150px 0 100px;
+  text-align: center;
+}
+
+@media (max-width: 799px) {
+  .main-top-section {
+    padding : 50px 0 20px; 
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-section {
+      padding: 100px 0 50px;
+  }
+}
+
+.main-top-title span {
+  color: #5DA0D7;
+}
+
+@media (min-width: 1280px) {
+  .inner {
+      position: relative;
+      max-width: 1280px !important;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 799px) {
+  .inner {
+      position: relative;
+      max-width: 90% !important;
+      margin: 0 auto;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .inner {
+      width: 100%;
+      position: relative;
+      max-width: 90% !important;
+      margin: 0 auto;
+  }
+}
+
+/* -- 섹션 텍스트 기본 -- */ 
+.main-top-title {
+  font-size: 65px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.main-top-txt {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.main-top-subtxt {
+  font-size: 18px;
+  color: #b6b6b6;
+  margin-top: 20px;
+  display: inline-block;
+
+}
+
+@media (max-width: 799px) {
+  .main-top-title {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 20px; 
+  }
+
+  .main-top-txt {
+    font-size: 14px;
+    line-height: 20px;
+    word-break: keep-all;
+  }
+
+  .main-top-subtxt {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-title {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+
+  .main-top-txt {
+      font-size: 20px;
+  }
+
+  .main-top-subtxt {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* 섹션 리스트 */ 
+.main-top-section ul {
+  margin-top: 90px;
+}
+
+@media (max-width: 799px) {
+  .main-top-section ul {
+      margin-top: 20px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-section ul {
+      margin-top: 50px;
+  }
+}
+
+.main-top-section li {
+  width: 33.33%;
+  float: left;
+  position: relative;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 799px) {
+  .main-top-section li {
+      width: 100%;
+      float: unset;
+      padding: 40px 20px 40px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-section li {
+      padding: 0 20px;
+  }
+}
+
+.main-top-section li > img {
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 799px) {
+  .main-top-section li img {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.2;
+      left: 40px;
+      top: 25px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-section li img {
+      width: 100px;
+  }
+}
+
+.main-top-section li h6 {
+  font-size: 22px;
+  color: #000;
+  margin: 25px 0 20px;
+}
+
+@media (max-width: 799px) {
+  .main-top-section li h6 {
+      font-size: 16px;
+      margin: 20px 0 15px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-section li h6 {
+      font-size: 18px;
+      margin: 20px 0 15px;
+  }
+}
+
+.main-top-section li p {
+  font-size: 17px;
+  color: #717171;
+  line-height: 30px;
+  word-break: keep-all;
+}
+
+@media (max-width: 799px) {
+  .main-top-section li p {
+      font-size: 13px;
+      line-height: 23px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  .main-top-section li p {
+      font-size: 14px;
+      line-height: 25px;
+  }
+}
 
