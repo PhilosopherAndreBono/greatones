@@ -24,6 +24,7 @@
   top : 25%;
   left : 10% ;
   font-size: 4vw; /* 화면 너비의 4% 로 기본 글자 크기 설정 */
+  line-height: 1.2;
 }
 
 .main-top-video-lastline {
