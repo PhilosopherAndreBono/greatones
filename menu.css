@@ -2,13 +2,15 @@
   background-color: #f4f5f6;
   border: none;
   padding: 10px;
+  width: 270px;
+  height: 360px;
   overflow: hidden;
   border-radius: 0;
 }
 
 .menu-custom-card-img {
-  width: 100%;
-  height: auto;
+  width: 138px;
+  height: 226px;
   object-fit: cover;
   display: block;
   margin: 0 auto; /* 이미지를 카드 중앙에 배치 */
@@ -18,40 +20,16 @@
   color: #000000;
   font: 16px NotoSans, sans-serif;
   padding: 5px 0px;
-  text-align: center;
 }
 
 .menu-ice {
   color: #000000;
   font: 12px NotoSans, sans-serif;
-  text-align: center;
 }
 
-/* 미디어 쿼리 */
 @media (min-width: 1400px) {
   .container {
     width: 1200px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .col-lg-3 {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-  }
-}
-
-@media (max-width: 992px) {
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
   }
 }
 
@@ -126,12 +104,10 @@
   font-size: 40px;
   color: #000;
   font-weight: 580;
-  text-align: center;
 }
 
 .last-season-title h4 span {
   color: #5da0d7;
-  text-align: center;
 }
 
 .slick-prev:before,
@@ -157,24 +133,8 @@
 }
 
 .autoplay img {
-  width: 100%;
-  height: auto;
+  width: 282px;
+  height: 389px;
   padding-left: 10px;
   object-fit: cover;
-}
-
-/* 미디어 쿼리 */
-@media (max-width: 992px) {
-  .slick-prev,
-  .slick-next {
-    font-size: 1.5em;
-    width: 40px;
-    height: 40px;
-  }
-  .slick-prev {
-    left: -40px;
-  }
-  .slick-next {
-    right: -40px;
-  }
 }
