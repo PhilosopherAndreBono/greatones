@@ -44,7 +44,12 @@ document.addEventListener("scroll", function () {
   const sectionTop = drinkSection.getBoundingClientRect().top;
   const viewportHeight =
     window.innerHeight || document.documentElement.clientHeight;
+  const viewportWidth =
+    window.innerWidth || document.documentElement.clientWidth;
   const drinkText = document.querySelector(".drink-text");
+
+  const marginTop = viewportWidth < 600 ? "50px" : 
+  viewportWidth >= 600 && viewportWidth < 992 ? "75px" : "100px";
 
   if (sectionTop <= viewportHeight - 300) {
     gsap.to(drinkText, {
@@ -56,9 +61,13 @@ document.addEventListener("scroll", function () {
   } else {
     gsap.to(drinkText, {
       duration: 0.5,
-      marginTop: "100px",
+      marginTop,
       opacity: 0,
     });
     drink.closeWrapper();
   }
+});
+
+window.addEventListener("resize", function () {
+  drink.resetDrink();
 });

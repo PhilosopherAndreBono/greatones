@@ -3,9 +3,10 @@ export default class drinkApp {
   drinkCount = 14;
   drink = [];
   drinkInfo = [];
-  drinkWidth = 250;
-  drinkHeight = 370;
-  drinkMargin = 30;
+  drinkTop = 0;
+  drinkWidth = 0;
+  drinkHeight = 0;
+  drinkMargin = 0;
   commandDrink;
   currentDrink;
   dragging = false;
@@ -53,7 +54,57 @@ export default class drinkApp {
   }
 
   setWrapper() {
+    this.setSize();
     this.wrapper.style.opacity = 0;
+  }
+
+  setSize() {
+    this.drinkTop = 60;
+    if (this.wrapper.offsetWidth < 600) {
+      this.drinkWidth = 150;
+      this.drinkHeight = 300;
+      this.drinkMargin = 10;
+    } else if (this.wrapper.offsetWidth < 992) {
+      this.drinkWidth = 200;
+      this.drinkHeight = 370;
+      this.drinkMargin = 20;
+    } else {
+      this.drinkWidth = 250;
+      this.drinkHeight = 370;
+      this.drinkMargin = 30;
+    }
+  };
+
+  resetDrink() {
+    this.setSize();
+
+    for (const [i, drink] of this.drink.entries())  {
+      const tag = drink.tag;
+      tag.style.left = `${i * (this.drinkWidth + this.drinkMargin)}px`;
+      tag.style.top = `${this.drinkTop}px`;
+      tag.style.width = `${this.drinkWidth}px`;
+      tag.style.height = `${this.drinkHeight}px`;
+
+      const text1 = drink.text1
+
+      const text2 = drink.text2
+
+      const img = drink.img;
+      img.style.width = "50%";
+      img.style.marginTop = "40px";
+
+      const position = { left: tag.offsetLeft, top: tag.offsetTop };
+      drink.position = position;
+    }
+
+    const wrapperComputedStyle = window.getComputedStyle(this.wrapper);
+    const wrapperWidth = parseInt(wrapperComputedStyle.width, 10);
+    const centerIndex = Math.floor(this.drinkCount / 2);
+    this.commandDrink = this.drink[centerIndex];
+
+    this.commandX = wrapperWidth / 2 - this.drinkWidth / 2;
+
+    this.initPosition();
   }
 
   showWrapper() {
@@ -79,6 +130,7 @@ export default class drinkApp {
       tag.style.backgroundColor = `${this.drinkInfo[i].color}`;
       tag.style.color = "white";
       tag.style.position = "absolute";
+      tag.style.top = `${this.drinkTop}px`;
       tag.style.left = `${i * (this.drinkWidth + this.drinkMargin)}px`;
       tag.style.width = `${this.drinkWidth}px`;
       tag.style.height = `${this.drinkHeight}px`;
@@ -107,7 +159,7 @@ export default class drinkApp {
 
       const position = { left: tag.offsetLeft, top: tag.offsetTop };
 
-      const drink = { index: i, tag: tag, img: img, position: position };
+      const drink = { index: i, tag: tag, img: img, position: position, text1: text1, text2: text2 };
       this.drink.push(drink);
     });
 
