@@ -7,8 +7,6 @@
 }
 
 
-
-
 body {
     font-family: 'TTHakgyoansimJiugaeR','NotoSans', sans-serif;
 }
@@ -135,9 +133,9 @@ body {
     font-family: 'GmarketSansMedium';
 }
 .footer-items {
-    border: solid 3px #221f20;
+    border: solid 1px #221f2000;
     width: 90vw;
-    height: 40vh;
+    height: 30vh;
     position: relative;
     top: 50px;
     left: 50px;

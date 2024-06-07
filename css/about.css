@@ -1,0 +1,112 @@
+/* about의 전체 컨테이너 (이 컨테이너를 빠져나가는 요소 없도록 설정함) */
+.about-whole-container {
+    height: 260vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.about-whole-container * {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: inherit; /* 부모의 box-sizing 속성을 상속받음 */
+}
+
+
+
+
+.about-first-container{
+    border: solid 1px rgba(255, 255, 255, 0);
+    background-image: url("https://hiocoffee.com/sub/img/bg_sf_01.jpg");
+    height: 50vh;
+    width: inherit;
+    position: relative;
+}
+.about-first-titles {
+    display: block;
+
+
+    margin: 13vh 0 0 10vw;
+}
+.about-first-title-firstline {
+    font-size: 9vh;
+    color: white;
+    margin-bottom: 2vh;
+}
+.about-first-title-secondline {
+    font-size: 2vh;
+    color: rgba(206, 206, 206, 0.614);
+    letter-spacing: 7px;
+}
+.about-first-category {
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    height: 13vh;
+    background-color: rgba(44, 44, 44, 0.671);
+}
+.about-first-category-text {
+    color: white;
+    display: flex;
+    margin: 6vh 10vw;
+}
+.about-first-category-text-style {
+    margin-right: 27px;
+}
+.about-first-category-text-style:hover {
+    color: #5da0d8;
+    cursor: pointer;
+    border-bottom: solid 4px #5da0d8;
+}
+
+
+
+
+.about-second-container {
+    border: solid 2px rgba(255, 255, 255, 0);
+    height: 80vh;
+    width: inherit;
+    position: relative;
+}
+.about-second-titles {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 13vh 0;
+}
+.about-second-li li {
+    font-size: 13px;
+    word-break: keep-all;
+    line-height: 25px;
+    height: 240px;    
+    float: left;
+    width: 33.333%;
+    height: 270px;
+    padding: 0 20px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    list-style: none;
+}
+
+.about-third-container-bgimg {
+    background-image: url("https://hiocoffee.com/sub/img/bg_01_01_b.jpg");
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-third-container {
+    border: solid 2px rgba(255, 0, 0, 0);
+    height: 130vh;
+    position: relative;
+    background-color: #5da1d886;
+}
+.about-third-container-text {
+    margin: 80px 100px;
+    color: white;
+}
+.about-third-simbolImg {
+    position: absolute; 
+    top: 55%;
+    left: 50%;
+    right:  50%; 
+    transform: translate(-50%, -50%);
+}
