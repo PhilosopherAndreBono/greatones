@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("scroll", function () {
   const drinkSection = document.getElementById("drink-section");
-  const sectionTop = drinkSection.getBoundingClientRect().top; // 섹션의 상단 위치
+  const sectionTop = drinkSection.getBoundingClientRect().top;
   const viewportHeight =
-    window.innerHeight || document.documentElement.clientHeight; // 뷰포트 높이
+    window.innerHeight || document.documentElement.clientHeight;
   const drinkText = document.querySelector(".drink-text");
 
   if (sectionTop <= viewportHeight - 300) {
