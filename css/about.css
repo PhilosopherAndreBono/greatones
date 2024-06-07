@@ -1,6 +1,6 @@
 /* about의 전체 컨테이너 (이 컨테이너를 빠져나가는 요소 없도록 설정함) */
 .about-whole-container {
-    height: 1000px;
+    height: 260vh;
     width: 100%;
     box-sizing: border-box;
 }
@@ -9,6 +9,8 @@
     max-height: 100%;
     box-sizing: inherit; /* 부모의 box-sizing 속성을 상속받음 */
 }
+
+
 
 
 .about-first-container{
@@ -20,6 +22,7 @@
 }
 .about-first-titles {
     display: block;
+
 
     margin: 13vh 0 0 10vw;
 }
@@ -43,7 +46,7 @@
 .about-first-category-text {
     color: white;
     display: flex;
-    margin: 40px 10vw;
+    margin: 6vh 10vw;
 }
 .about-first-category-text-style {
     margin-right: 27px;
@@ -53,6 +56,8 @@
     cursor: pointer;
     border-bottom: solid 4px #5da0d8;
 }
+
+
 
 
 .about-second-container {
@@ -79,4 +84,29 @@
     border-right: 1px solid #e5e5e5;
     text-align: center;
     list-style: none;
+}
+
+.about-third-container-bgimg {
+    background-image: url("https://hiocoffee.com/sub/img/bg_01_01_b.jpg");
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-third-container {
+    border: solid 2px rgba(255, 0, 0, 0);
+    height: 130vh;
+    position: relative;
+    background-color: #5da1d886;
+}
+.about-third-container-text {
+    margin: 80px 100px;
+    color: white;
+}
+.about-third-simbolImg {
+    position: absolute; 
+    top: 55%;
+    left: 50%;
+    right:  50%; 
+    transform: translate(-50%, -50%);
 }
