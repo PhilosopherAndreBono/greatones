@@ -2,9 +2,9 @@ export default class drinkApp {
   wrapper;
   drinkCount = 14;
   drink = [];
-  name = [];
-  drinkWidth = 231;
-  drinkHeight = 300;
+  drinkInfo = [];
+  drinkWidth = 250;
+  drinkHeight = 370;
   drinkMargin = 30;
   commandDrink;
   currentDrink;
@@ -13,14 +13,13 @@ export default class drinkApp {
   prevY = 0;
   commandX = 0;
   commandY = 0;
-  constructor(id, name) {
+  constructor(id, drinkInfo) {
     this.wrapper = document.getElementById(id);
-    this.name = name;
-
-    this.runApp();
+    this.drinkInfo = drinkInfo;
   }
 
   runApp() {
+    this.setWrapper();
     this.createDrink();
     this.initPosition();
     this.registerEvent();
@@ -53,11 +52,32 @@ export default class drinkApp {
     });
   }
 
+  setWrapper() {
+    this.wrapper.style.opacity = 0;
+  }
+
+  showWrapper() {
+    gsap.to(this.wrapper, {
+      duration: 1.5,
+      opacity: 1,
+      // ease: 'power1.inOut',
+    });
+  }
+
+  closeWrapper() {
+    gsap.to(this.wrapper, {
+      duration: 1.5,
+      opacity: 0,
+      // ease: 'power1.inOut',
+    });
+  }
+
   createDrink() {
     Array.from({ length: this.drinkCount }).map((_, i) => {
       const tag = document.createElement("div");
       tag.className = "drink";
-      tag.textContent = `${this.name[i]}`;
+      tag.style.backgroundColor = `${this.drinkInfo[i].color}`;
+      tag.style.color = "white";
       tag.style.position = "absolute";
       tag.style.left = `${i * (this.drinkWidth + this.drinkMargin)}px`;
       tag.style.width = `${this.drinkWidth}px`;
@@ -68,10 +88,20 @@ export default class drinkApp {
       tag.style.overflow = "hidden";
       this.wrapper.appendChild(tag);
 
+      const text1 = document.createElement("span");
+      text1.textContent = `${this.drinkInfo[i].name}`;
+      text1.className = "text1";
+      tag.appendChild(text1);
+
+      const text2 = document.createElement("span");
+      text2.textContent = `${this.drinkInfo[i].englishName}`;
+      text2.className = "text2";
+      tag.appendChild(text2);
+
       const img = document.createElement("img");
       img.src = `../src/drink/${i + 1}.png`;
       img.style.width = "50%";
-      img.style.marginTop = "110px";
+      img.style.marginTop = "40px";
       img.style.pointerEvents = "none";
       tag.appendChild(img);
 
@@ -157,8 +187,8 @@ export default class drinkApp {
 
     const top = drink.position.top - 50;
 
-    gsap.to(tag, {top: `${top}px`, duration: 0.5});
-    gsap.to(img, {marginTop: "70px", duration: 0.5});
+    gsap.to(tag, { top: `${top}px`, duration: 0.5 });
+    gsap.to(img, { marginTop: "20px", duration: 0.5 });
   }
 
   onMouseLeave(drink) {
@@ -167,8 +197,8 @@ export default class drinkApp {
 
     const top = drink.position.top;
 
-    gsap.to(tag, {top: `${top}px`, duration: 0.5});
-    gsap.to(img, {marginTop: "110px", duration: 0.5});
+    gsap.to(tag, { top: `${top}px`, duration: 0.5 });
+    gsap.to(img, { marginTop: "40px", duration: 0.5 });
   }
 
   onPointerDown(e, drink) {
