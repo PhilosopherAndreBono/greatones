@@ -2,13 +2,13 @@
   background-color: #f4f5f6;
   border: none;
   padding: 10px;
-  width: 270px;
-  height: 360px;
+  overflow: hidden;
+  border-radius: 0;
 }
 
 .menu-custom-card-img {
-  width: 138px;
-  height: 226px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto; /* 이미지를 카드 중앙에 배치 */
@@ -18,15 +18,163 @@
   color: #000000;
   font: 16px NotoSans, sans-serif;
   padding: 5px 0px;
+  text-align: center;
 }
 
 .menu-ice {
   color: #000000;
   font: 12px NotoSans, sans-serif;
+  text-align: center;
 }
 
-@media (min-width: 1496px) {
+/* 미디어 쿼리 */
+@media (min-width: 1400px) {
   .container {
     width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .col-lg-3 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/*메뉴 설명 -- 호버 이벤트*/
+.menu-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #7599c6;
+  opacity: 0;
+}
+
+.menu-custom-card:hover .menu-info {
+  opacity: 1;
+}
+
+.menu-info-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 15px;
+  border-bottom: 2px solid #7599c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-info-title > h5 {
+  font: 17px NotoSans, sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+.menu-info-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #7599c6;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.menu-info-text > p {
+  font: 13.5px NotoSans, sans-serif;
+  font-weight: 530;
+  color: #ffff;
+  line-height: 22px;
+  word-break: keep-all;
+  margin-top: 5px;
+}
+
+.last-season-title {
+  padding: 20px 0 40px;
+  margin-top: 100px;
+}
+
+.last-season-title h4 {
+  font-size: 40px;
+  color: #000;
+  font-weight: 580;
+  text-align: center;
+}
+
+.last-season-title h4 span {
+  color: #5da0d7;
+  text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 2em; /* 화살표 크기를 키움 */
+  width: 50px; /* 버튼 너비 */
+  height: 50px; /* 버튼 높이 */
+  z-index: 1; /* 버튼이 다른 요소 위에 나타나도록 함 */
+  border-radius: 100%;
+}
+
+.slick-prev {
+  left: -60px; /* 왼쪽 화살표 위치 조정 */
+}
+
+.slick-next {
+  right: -60px; /* 오른쪽 화살표 위치 조정 */
+}
+
+.autoplay img {
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  object-fit: cover;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 992px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+  }
+  .slick-prev {
+    left: -40px;
+  }
+  .slick-next {
+    right: -40px;
   }
 }
