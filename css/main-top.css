@@ -1,4 +1,13 @@
-
+.main {
+  height: 330vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main * {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: inherit; /* 부모의 box-sizing 속성을 상속받음 */
+}
 .main-top-video-section {
   position: relative;
   width: 100%;
@@ -35,6 +44,14 @@
   .main-top-video-lastline {
     top: 15%;
     left: 5%;
+  }
+  .main {
+    height: 230vh;
+  }
+}
+@media (min-width: 480px) and (max-width: 870px) {
+  .main {
+    height: 240vh;
   }
 }
 
