@@ -2,8 +2,8 @@
   background-color: #f4f5f6;
   border: none;
   padding: 10px;
-  width: 270px;
-  height: 360px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   border-radius: 0;
 }
@@ -13,12 +13,18 @@
   height: 226px;
   object-fit: cover;
   display: block;
-  margin: 0 auto; /* 이미지를 카드 중앙에 배치 */
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.menu-custom-card:hover .menu-custom-card-img {
+  /* 호버 시 이미지 확대 */
+  transform: scale(1.1);
 }
 
 .menu-title {
   color: #000000;
-  font: 16px NotoSans, sans-serif;
+  font: 15px NotoSans, sans-serif;
   padding: 5px 0px;
 }
 
@@ -28,7 +34,7 @@
 }
 
 @media (min-width: 1400px) {
-  .container {
+  menu-bottom .container {
     width: 1200px;
   }
 }
@@ -117,7 +123,7 @@
 
 .slick-prev,
 .slick-next {
-  font-size: 2em; /* 화살표 크기를 키움 */
+  font-size: 2rem; /* 화살표 크기를 키움 */
   width: 50px; /* 버튼 너비 */
   height: 50px; /* 버튼 높이 */
   z-index: 1; /* 버튼이 다른 요소 위에 나타나도록 함 */
@@ -125,11 +131,11 @@
 }
 
 .slick-prev {
-  left: -60px; /* 왼쪽 화살표 위치 조정 */
+  left: -5%; /* 왼쪽 화살표 위치 조정 */
 }
 
 .slick-next {
-  right: -60px; /* 오른쪽 화살표 위치 조정 */
+  right: -6%; /* 오른쪽 화살표 위치 조정 */
 }
 
 .autoplay img {
@@ -138,6 +144,80 @@
   padding-left: 10px;
   object-fit: cover;
 }
+
+.autoplay img:hover {
+  transform: scale(1.05); /*시즌 포스터에 호버시 약간 확대 이벤트 */
+}
+
+/*메뉴 카드 미디어 쿼리*/
+@media (max-width: 1200px) {
+  menu-card .col-lg-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .menu-custom-card {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  menu-card .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .menu-custom-card {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  menu-card .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .menu-custom-card {
+    padding: 4px;
+  }
+  .slick-next {
+    right: -13%; /* 오른쪽 화살표 위치 조정 */
+  }
+}
+
+@media (max-width: 576px) {
+  menu-card .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .menu-custom-card {
+    padding: 2px;
+  }
+  .last-season-title h4 {
+    font: 30px;
+  }
+}
+
+/*슬라이드 미디어 쿼리*/
+@media (max-width: 768px) {
+  .autoplay img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .autoplay img {
+    width: 100%;
+    height: auto;
+  }
+  .slick-prev {
+    left: 2.5%;
+  }
+  .slick-next {
+    right: -5%;
+  }
+}
+
+/*nav랑 footer css*/
 
 @import "reset.css";
 @font-face {
