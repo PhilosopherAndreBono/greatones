@@ -56,15 +56,16 @@ export default class drinkApp {
   setWrapper() {
     this.setSize();
     this.wrapper.style.opacity = 0;
+    this.wrapper.style.touchAction = "none";
   }
 
   setSize() {
     this.drinkTop = 60;
-    if (this.wrapper.offsetWidth < 600) {
+    if (this.wrapper.offsetWidth < 799) {
       this.drinkWidth = 150;
       this.drinkHeight = 300;
       this.drinkMargin = 10;
-    } else if (this.wrapper.offsetWidth < 992) {
+    } else if (this.wrapper.offsetWidth < 1279) {
       this.drinkWidth = 200;
       this.drinkHeight = 370;
       this.drinkMargin = 20;

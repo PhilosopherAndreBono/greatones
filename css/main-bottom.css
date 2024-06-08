@@ -7,6 +7,7 @@
   background-image: url(../src/drink/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .main-bottom-drink-text {
@@ -30,6 +31,7 @@
 .main-bottom-drink-txt {
   font-size: 26px;
   font-weight: 500;
+  text-align: center;
 }
 
 #main-bottom-drinks-wrapper {
@@ -47,29 +49,88 @@
 
 .main-bottom-text1 {
   margin-top: 20px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .main-bottom-text2 {
   margin-top: 20px;
-  font-weight: bold;
   font-size: 25px;
   width: 80%;
   min-height: 100px;
   text-align: center;
 }
 
+#main-bottom-follow-section {
+  background-color: #fefcea;
+  margin-top: 70px;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.main-bottom-follow-inner {
+  width: 100%;
+  position: relative;
+  max-width: 90% !important;
+  margin: 0 auto;
+}
+
+.main-bottom-follow-title {
+  text-align: center;
+}
+
+.main-bottom-follow-title h5 {
+  padding: 15px 0;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #5DA0D7;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.main-bottom-follow-title a {
+  display: block;
+  font-size: 15px;
+  color: #5DA0D7;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.main-bottom-follow-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-bottom-follow-box {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bottom-follow-box a {
+  display: block;
+  width: 95%;
+  height: 95%;
+}
+
+.main-bottom-follow-box img {
+  width: 100%;
+}
+
 #main-bottom-map-section {
   margin-top: 150px;
   width: 100%;
-  /* height: 930px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 
 .main-bottom-map-text {
-  /* position: relative; */
   margin-top: 100px;
   margin-bottom: 50px;
 }
@@ -111,7 +172,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 5vw;
 }
 
 .main-bottom-map {
@@ -141,6 +202,18 @@
   text-align: center;
 }
 
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: skyblue;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: skyblue;
+}
+
 #main-bottom-map-section {
   display: block;
 }
@@ -168,8 +241,12 @@
     font-size: 20px;
   }
 
-  #main-bottom-map-section {
-    height: 600px;
+  .main-bottom-text1 {
+    font-size: 20px;
+  }
+
+  .main-bottom-text2 {
+    font-size: 25px;
   }
 
   #main-bottom-map-section {
@@ -203,6 +280,14 @@
     word-break: keep-all;
   }
 
+  .main-bottom-text1 {
+    font-size: 15px;
+  }
+
+  .main-bottom-text2 {
+    font-size: 20px;
+  }
+
   #main-bottom-map-section {
     height: 500px;
   }
@@ -216,7 +301,7 @@
   }
 
   .main-bottom-mobile-map-box-wrapper {
-    margin: 10px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,11 +311,12 @@
   .main-bottom-mobile-map-box {
     border: 1px solid #e5e5e5;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 10%);
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5vw;
   }
 
   .main-bottom-mobile-map {
@@ -240,14 +326,14 @@
 
   .main-bottom-mobile-map-box > h6 {
     margin: 1.89vw 0 0.54vw;
-    font-size: 8vw;
+    font-size: 6vw;
     font-family: "Raleway", sans-serif;
     color: #5da0d7;
     font-weight: 800;
   }
 
   .main-bottom-mobile-map-box > p {
-    font-size: 5.2vw;
+    font-size: 4vw;
     color: #000;
   }
 
@@ -256,7 +342,24 @@
     color: rgba(0, 0, 0, 0.5);
     margin: 1.39vw 0 3.89vw;
     display: inline-block;
-    font-weight: 600;
     text-align: center;
+  }
+
+  .main-bottom-follow-box {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 612px) {
+  #main-bottom-drink-section {
+    margin-top: 100px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #main-bottom-drink-section {
+    margin-top: 150px;
+    height: 500px;
   }
 }

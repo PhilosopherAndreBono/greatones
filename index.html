@@ -110,7 +110,7 @@
     <main class="main">
       <!-- 눈나 커피 비디오-->
       <div class="main-top-video-section">
-        <video width="560" height="315" autoplay loop muted>
+        <video width="560" height="315" autoplay loop muted playsinline>
           <source src="./src/hiocoffee-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -206,7 +206,9 @@
         data-aos-duration="2500"
       >
         <div>
-          <div class="main-top-title"><span>NUNNA COFFEE</span>'S VALUATION</div>
+          <div class="main-top-title">
+            <span>NUNNA COFFEE</span>'S VALUATION
+          </div>
           <p class="main-top-txt">
             “눈나와 함께 합리적인 가격에, 고품질의 커피를, 누구나, 언제든지”
           </p>
@@ -261,6 +263,31 @@
           </p>
         </div>
         <div id="main-bottom-drinks-wrapper"></div>
+      </section>
+      <section id="main-bottom-follow-section">
+        <div class="main-bottom-follow-inner">
+          <div class="main-bottom-follow-title">
+            <h5>FOLLOW US</h5>
+            <a href="#">@NOONA.COFFEE</a>
+          </div>
+          <div class="main-bottom-follow-wrapper">
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/1.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/2.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/3.png"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/4.png"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/5.png"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/6.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/7.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/8.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/9.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/10.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/11.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/12.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/13.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/14.jpg"></a></div>
+            <div class="main-bottom-follow-box"><a href="#"><img src="src/follow/15.jpg"></a></div>
+          </div>
+        </div>
       </section>
       <section id="main-bottom-map-section">
         <div
@@ -353,18 +380,21 @@
               class="active"
               aria-current="true"
               aria-label="Slide 1"
+              onclick="setMapHeight()"
             ></button>
             <button
               type="button"
               data-bs-target="#main-bottom-mobile-map-indicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
+              onclick="setMapHeight()"
             ></button>
             <button
               type="button"
               data-bs-target="#main-bottom-mobile-map-indicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
+              onclick="setMapHeight()"
             ></button>
           </div>
           <div class="carousel-inner">
@@ -470,8 +500,8 @@
           />
           <div class="footer-secondline-location">
             <p style="margin-bottom: 5px">
-              눈나커피 서울센터 | 서울특별시 금천구 가산디지털2로 101
-              코알누타워 A동
+              눈나커피 서울센터 | 서울특별시 금천구 가산디지털2로 101 코알누타워
+              A동
             </p>
             <p style="margin-bottom: 5px">
               눈나커피 부산센터 | 부산광역시 해운대구 센텀1로 코알누타워 E동
@@ -508,7 +538,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/main-top.js"></script>
+    <script src="/js/main_top.js"></script>
     <script>
       AOS.init();
     </script>
