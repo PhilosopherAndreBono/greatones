@@ -202,13 +202,13 @@
   text-align: center;
 }
 
-.carousel-control-prev-icon:after {
+#main-bottom-mobile-map-section .carousel-control-prev-icon:after {
   content: "<";
   font-size: 55px;
   color: skyblue;
 }
 
-.carousel-control-next-icon:after {
+#main-bottom-mobile-map-section .carousel-control-next-icon:after {
   content: ">";
   font-size: 55px;
   color: skyblue;
