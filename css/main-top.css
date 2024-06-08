@@ -47,12 +47,12 @@
     left: 5%;
   }
   .main {
-    height: 230vh;
+    /* height: 230vh; */
   }
 }
 @media (min-width: 480px) and (max-width: 870px) {
   .main {
-    height: 240vh;
+    /* height: 240vh; */
   }
 }
 
@@ -72,17 +72,20 @@
 .main-top-section {
   padding : 150px 0 100px;
   text-align: center;
+  height: 900px;
 }
 
 @media (max-width: 799px) {
   .main-top-section {
-    padding : 50px 0 20px; 
+    padding : 50px 0 20px;
+    height: 800px;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1279px) {
   .main-top-section {
       padding: 100px 0 50px;
+      height: 700px;
   }
 }
 
