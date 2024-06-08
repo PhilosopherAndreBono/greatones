@@ -36,8 +36,10 @@ const drinkInfo = [
 const drink = new drinkApp("main-bottom-drinks-wrapper", drinkInfo);
 
 const setMapHeight = () => {
-  const box = document.querySelectorAll(".box");
+  const box = document.querySelectorAll(".main-bottom-map-box");
   const map = document.querySelectorAll(".main-bottom-map");
+  const mobileBox = document.querySelectorAll(".main-bottom-mobile-map-box");
+  const mobileMap = document.querySelectorAll(".main-bottom-mobile-map");
 
   box.forEach((box) => {
     const style = window.getComputedStyle(box);
@@ -48,6 +50,21 @@ const setMapHeight = () => {
   });
 
   map.forEach((map) => {
+    const style = window.getComputedStyle(map);
+    const width = style.getPropertyValue("width");
+
+    map.style.height = width;
+  });
+
+  mobileBox.forEach((box) => {
+    const style = window.getComputedStyle(box);
+    const width = style.getPropertyValue("width");
+    const widthNumber = parseInt(width, 10);
+
+    box.style.height = `${widthNumber * 1.6}px`;
+  });
+
+  mobileMap.forEach((map) => {
     const style = window.getComputedStyle(map);
     const width = style.getPropertyValue("width");
 
