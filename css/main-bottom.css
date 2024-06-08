@@ -1,9 +1,3 @@
-#test {
-  width: 100%;
-  height: 1000px;
-  font-size: 50px;
-}
-
 #main-bottom-drink-section {
   width: 100%;
   height: 700px;
@@ -18,28 +12,24 @@
 .main-bottom-drink-text {
   /* opacity: 0; */
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-bottom-drink-title {
-  text-align: Center;
   font-size: 65px;
-  color: #1e1e1e;
   font-weight: 100;
   margin-bottom: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .main-bottom-drink-title span {
   color: #5da0d7;
-  margin-right: -15px;
 }
 
-.main-bottom-drink-text p {
+.main-bottom-drink-txt {
   font-size: 26px;
-  color: #000;
   font-weight: 500;
-  text-align: Center;
 }
 
 #main-bottom-drinks-wrapper {
@@ -107,7 +97,7 @@
 }
 
 #main-bottom-map-wrapper {
-  margin: 0 auto;
+  margin: 5vw auto;
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -159,7 +149,7 @@
   display: none;
 }
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 799px) and (max-width: 1279px) {
   #main-bottom-drink-section {
     height: 600px;
   }
@@ -170,108 +160,28 @@
   }
 
   .main-bottom-drink-title {
-    text-align: Center;
-    font-size: 35px;
-    color: #1e1e1e;
-    font-weight: 100;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 25px;
   }
 
-  .main-bottom-drink-title span {
-    color: #5da0d7;
-    margin-right: -8px;
-  }
-
-  .main-bottom-drink-text p {
-    font-size: 14px;
-    color: #000;
-    font-weight: 500;
-    text-align: Center;
+  .main-bottom-drink-txt {
+    font-size: 20px;
   }
 
   #main-bottom-map-section {
     height: 600px;
   }
 
-  .main-bottom-map-title {
-    text-align: Center;
-    font-size: 35px;
-    color: #1e1e1e;
-    font-weight: 100;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  .main-bottom-map-title span {
-    color: #5da0d7;
-    margin-right: -8px;
-  }
-
-  .main-bottom-map-text p {
-    font-size: 14px;
-    color: #000;
-    font-weight: 500;
-    text-align: Center;
-  }
-
   #main-bottom-map-section {
-    display: none;
-  }
-
-  #main-bottom-mobile-map-section {
     display: block;
   }
 
-  .main-bottom-mobile-map-box-wrapper {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .main-bottom-mobile-map-box {
-    border: 1px solid #e5e5e5;
-    box-shadow: 10px 10px 15px rgb(0 0 0 / 10%);
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .main-bottom-mobile-map {
-    margin-top: 5%;
-    width: 90%;
-  }
-
-  .main-bottom-mobile-map-box > h6 {
-    margin: 0.9vw 0 0.27vw;
-    font-size: 4vw;
-    font-family: "Raleway", sans-serif;
-    color: #5da0d7;
-    font-weight: 800;
-  }
-
-  .main-bottom-mobile-map-box > p {
-    font-size: 2.6vw;
-    color: #000;
-  }
-
-  .main-bottom-mobile-map-box > span {
-    font-size: 2vw;
-    color: rgba(0, 0, 0, 0.5);
-    margin: 1vw 0 1.9vw;
-    display: inline-block;
-    font-weight: 600;
-    text-align: center;
+  #main-bottom-mobile-map-section {
+    display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
   #main-bottom-drink-section {
     height: 500px;
   }
@@ -282,51 +192,19 @@
   }
 
   .main-bottom-drink-title {
-    text-align: Center;
-    font-size: 25px;
-    color: #1e1e1e;
-    font-weight: 100;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  .main-bottom-drink-title span {
-    color: #5da0d7;
-    margin-right: -5px;
-  }
-
-  .main-bottom-drink-text p {
-    font-size: 14px;
-    color: #000;
     font-weight: 500;
-    text-align: Center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-bottom-drink-txt {
+    font-size: 14px;
+    line-height: 20px;
+    word-break: keep-all;
   }
 
   #main-bottom-map-section {
     height: 500px;
-  }
-
-  .main-bottom-map-title {
-    text-align: Center;
-    font-size: 25px;
-    color: #1e1e1e;
-    font-weight: 100;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  .main-bottom-map-title span {
-    color: #5da0d7;
-    margin-right: -5px;
-  }
-
-  .main-bottom-map-text p {
-    font-size: 14px;
-    color: #000;
-    font-weight: 500;
-    text-align: Center;
   }
 
   #main-bottom-map-section {

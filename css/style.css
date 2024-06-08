@@ -86,7 +86,7 @@ body {
 
 
 /* 네브바 미디어쿼리 -테블릿, 모바일 순 */
-@media (max-width: 992px) {
+@media (max-width: 1279px) {
     .nav-menu {
         display: none;
     }
@@ -180,7 +180,7 @@ body {
 
 
 /* footer 미디어쿼리 */
-@media (max-width: 992px) {
+@media (max-width: 1279px) {
     .footer-container {
         background-color: #5da0d8;
         height: 400px;

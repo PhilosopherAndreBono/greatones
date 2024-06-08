@@ -80,7 +80,7 @@ const setText = () => {
 
   const drinkSection = document.getElementById("main-bottom-drink-section");
   const drinkSectionTop = drinkSection.getBoundingClientRect().top;
-  const drinkText = document.querySelector(".main-bottom-drink-text");
+  // const drinkText = document.querySelector(".main-bottom-drink-text");
 
   const mapSection = document.getElementById("main-bottom-map-section");
   const mapSectionTop = mapSection.getBoundingClientRect().top;
@@ -93,21 +93,21 @@ const setText = () => {
       ? "125px"
       : "150px";
 
-  if (drinkSectionTop <= viewportHeight - 200) {
-    gsap.to(drinkText, {
-      duration: 0.5,
-      marginTop: "50px",
-      opacity: 1,
-    });
-    drink.showWrapper();
-  } else {
-    gsap.to(drinkText, {
-      duration: 0.5,
-      marginTop,
-      opacity: 0,
-    });
-    drink.closeWrapper();
-  }
+  // if (drinkSectionTop <= viewportHeight - 200) {
+  //   gsap.to(drinkText, {
+  //     duration: 0.5,
+  //     marginTop: "50px",
+  //     opacity: 1,
+  //   });
+  //   drink.showWrapper();
+  // } else {
+  //   gsap.to(drinkText, {
+  //     duration: 0.5,
+  //     marginTop,
+  //     opacity: 0,
+  //   });
+  //   drink.closeWrapper();
+  // }
 
   if (mapSectionTop <= viewportHeight - 200) {
     gsap.to(mapText, {
