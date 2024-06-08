@@ -226,7 +226,7 @@
   }
 
   .main-bottom-mobile-map-box-wrapper {
-    margin: 70px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,7 +338,7 @@
   }
 
   .main-bottom-mobile-map-box-wrapper {
-    margin: 70px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
