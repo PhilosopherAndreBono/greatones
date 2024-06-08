@@ -46,14 +46,8 @@
     top: 15%;
     left: 5%;
   }
-  .main {
-    height: 230vh;
-  }
 }
 @media (min-width: 480px) and (max-width: 870px) {
-  .main {
-    height: 240vh;
-  }
 }
 
 @media (max-width: 1024px) {
