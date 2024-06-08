@@ -13,6 +13,7 @@ body {
 /* nav css 정의 */
 .nav {
     padding: 1vh 10vw;
+    width: 100%;
 }
 .nav-logo:hover {
     cursor: pointer;
@@ -54,6 +55,10 @@ body {
     cursor: pointer;
     border-bottom: solid 4px #5da0d8;
 }
+.nav-menu-link {
+  text-decoration: none; 
+  color: inherit; 
+}
 .nav-offcanvas {
     display: none;
 }
@@ -85,7 +90,7 @@ body {
 
 
 /* 네브바 미디어쿼리 -테블릿, 모바일 순 */
-@media (max-width: 992px) {
+@media (max-width: 1279px) {
     .nav-menu {
         display: none;
     }
@@ -179,12 +184,11 @@ body {
 
 
 /* footer 미디어쿼리 */
-@media (max-width: 992px) {
+@media (max-width: 1279px) {
     .footer-container {
         background-color: #5da0d8;
         height: 400px;
         position : relative;
-        bottom: 0px;
     }
     .footer-menu-container {
         display: none;
