@@ -7,6 +7,24 @@
   font-style: normal;
 }
 
+html,
+body {
+  overflow-x: hidden; /* 가로 스크롤 제거 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 박스 모델 설정 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* 모든 요소와 가상 요소의 박스 모델을 상속 */
+}
+
+.menu-bottom {
+  width: 100%; /* 전체 너비를 페이지에 맞추기 */
+}
+
 .menu-custom-card {
   background-color: #f4f5f6;
   border: none;
@@ -27,28 +45,27 @@
 }
 
 .menu-custom-card:hover .menu-custom-card-img {
-  /* 호버 시 이미지 확대 */
-  transform: scale(1.1);
+  transform: scale(1.1); /* 호버 시 이미지 확대 */
 }
 
 .menu-title {
   color: #000000;
-  font: 15px NotoSans, sans-serif;
+  font-size: 15px;
   padding: 5px 0px;
 }
 
 .menu-ice {
   color: #000000;
-  font: 12px NotoSans, sans-serif;
+  font-size: 12px;
 }
 
 @media (min-width: 1400px) {
-  menu-bottom .container {
-    width: 1200px;
+  .menu-bottom .container {
+    max-width: 1200px;
   }
 }
 
-/*메뉴 설명 -- 호버 이벤트*/
+/* 메뉴 설명 -- 호버 이벤트 */
 .menu-info {
   position: absolute;
   top: 0;
@@ -85,7 +102,7 @@
 }
 
 .menu-info-title > h5 {
-  font: 17px NotoSans, sans-serif;
+  font-size: 17px;
   font-weight: 500;
   color: #000;
 }
@@ -102,7 +119,7 @@
 }
 
 .menu-info-text > p {
-  font: 13.5px NotoSans, sans-serif;
+  font-size: 13.5px;
   font-weight: 530;
   color: #ffff;
   line-height: 22px;
@@ -125,13 +142,13 @@
   color: #5da0d7;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.menu-bottom .slick-prev:before,
+.menu-bottom .slick-next:before {
   color: black;
 }
 
-.slick-prev,
-.slick-next {
+.menu-bottom .slick-prev,
+.menu-bottom.slick-next {
   font-size: 2rem; /* 화살표 크기를 키움 */
   width: 50px; /* 버튼 너비 */
   height: 50px; /* 버튼 높이 */
@@ -139,28 +156,28 @@
   border-radius: 100%;
 }
 
-.slick-prev {
+.menu-bottom .slick-prev {
   left: -5%; /* 왼쪽 화살표 위치 조정 */
 }
 
-.slick-next {
+.menu-bottom .slick-next {
   right: -6%; /* 오른쪽 화살표 위치 조정 */
 }
 
-.autoplay img {
-  width: 282px;
-  height: 389px;
+.menu-bottom .autoplay img {
+  width: 100%; /* width를 100%로 설정하여 가로 스크롤 방지 */
+  height: auto; /* height를 auto로 설정 */
   padding-left: 10px;
   object-fit: cover;
 }
 
-.autoplay img:hover {
-  transform: scale(1.05); /*시즌 포스터에 호버시 약간 확대 이벤트 */
+.menu-bottom .autoplay img:hover {
+  transform: scale(1.05); /* 시즌 포스터에 호버 시 약간 확대 이벤트 */
 }
 
 /*메뉴 카드 미디어 쿼리*/
 @media (max-width: 1200px) {
-  menu-card .col-lg-4 {
+  .menu-bottom .col-lg-4 {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
   }
@@ -170,7 +187,7 @@
 }
 
 @media (max-width: 992px) {
-  menu-card .col-md-6 {
+  .menu-bottom .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -180,20 +197,17 @@
 }
 
 @media (max-width: 768px) {
-  menu-card .col-sm-6 {
+  .menu-bottom .col-sm-6 {
     flex: 0 0 100%;
     max-width: 100%;
   }
   .menu-custom-card {
     padding: 4px;
   }
-  .slick-next {
-    right: -13%; /* 오른쪽 화살표 위치 조정 */
-  }
 }
 
 @media (max-width: 576px) {
-  menu-card .col-sm-6 {
+  .menu-bottom .col-sm-6 {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -204,34 +218,52 @@
     font: 30px;
   }
 }
+/* 슬라이드 미디어 쿼리 */
 
-/*슬라이드 미디어 쿼리*/
+@media (max-width: 1240px) {
+  .menu-bottom .slick-prev {
+    left: -3%; /* 왼쪽 화살표 위치 조정 */
+  }
+  .menu-bottom .slick-next {
+    right: -3%; /* 오른쪽 화살표 위치 조정 */
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-bottom .slick-prev {
+    left: -6%; /* 왼쪽 화살표 위치 조정 */
+  }
+  .menu-bottom .slick-next {
+    right: -6%; /* 오른쪽 화살표 위치 조정 */
+  }
+}
+
 @media (max-width: 768px) {
-  .autoplay img {
+  .menu-bottom .autoplay img {
     width: 100%;
     height: auto;
   }
 }
 
-@media (max-width: 600px) {
-  .autoplay img {
-    width: 100%;
-    height: auto;
+@media (max-width: 576px) {
+  .menu-bottom .autoplay img {
+    width: 100% !important;
+    height: auto !important;
   }
-  .slick-prev {
-    left: 2.5%;
+  .menu-bottom .slick-prev {
+    left: 2.5% !important;
   }
-  .slick-next {
-    right: -5%;
+  .menu-bottom .slick-next {
+    right: 1.5% !important;
   }
 }
 
-/*nav랑 footer css*/
-
+/* nav와 footer CSS */
 body {
   font-family: "TTHakgyoansimJiugaeR", "NotoSans", sans-serif;
 }
-/* nav css 정의 */
+
+/* nav CSS 정의 */
 .nav {
   padding: 1vh 10vw;
 }
@@ -304,7 +336,7 @@ body {
   transition-duration: 0.3s;
 }
 
-/* 네브바 미디어쿼리 -테블릿, 모바일 순 */
+/* 네브바 미디어 쿼리 - 테블릿, 모바일 순 */
 @media (max-width: 992px) {
   .nav-menu {
     display: none;
@@ -342,7 +374,7 @@ body {
   }
 }
 
-/* footer css 정의 */
+/* footer CSS 정의 */
 .footer-container {
   background-color: #221f20;
   height: 400px;
@@ -394,7 +426,7 @@ body {
   display: none;
 }
 
-/* footer 미디어쿼리 */
+/* footer 미디어 쿼리 */
 @media (max-width: 992px) {
   .footer-container {
     background-color: #5da0d8;
