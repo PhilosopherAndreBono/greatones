@@ -13,6 +13,7 @@ body {
 /* nav css 정의 */
 .nav {
     padding: 1vh 10vw;
+    width: 100%;
 }
 .nav-logo:hover {
     cursor: pointer;
