@@ -56,7 +56,6 @@ export default class drinkApp {
   setWrapper() {
     this.setSize();
     this.wrapper.style.opacity = 0;
-    this.wrapper.style.touchAction = "none";
   }
 
   setSize() {
@@ -85,10 +84,6 @@ export default class drinkApp {
       tag.style.top = `${this.drinkTop}px`;
       tag.style.width = `${this.drinkWidth}px`;
       tag.style.height = `${this.drinkHeight}px`;
-
-      const text1 = drink.text1
-
-      const text2 = drink.text2
 
       const img = drink.img;
       img.style.width = "50%";
@@ -139,6 +134,7 @@ export default class drinkApp {
       tag.style.flexDirection = "column";
       tag.style.alignItems = "center";
       tag.style.overflow = "hidden";
+      tag.style.touchAction = "none";
       this.wrapper.appendChild(tag);
 
       const text1 = document.createElement("span");
