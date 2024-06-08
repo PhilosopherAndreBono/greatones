@@ -47,12 +47,11 @@
 
 .main-bottom-text1 {
   margin-top: 20px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .main-bottom-text2 {
   margin-top: 20px;
-  font-weight: bold;
   font-size: 25px;
   width: 80%;
   min-height: 100px;
@@ -141,8 +140,28 @@
   text-align: center;
 }
 
-#main-bottom-map-section {
-  display: block;
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+} */
+
+/* 기본 상태에서 버튼 아이콘을 투명하게 설정 */
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: skyblue;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: skyblue;
 }
 
 #main-bottom-mobile-map-section {
@@ -166,6 +185,14 @@
 
   .main-bottom-drink-txt {
     font-size: 20px;
+  }
+
+  .main-bottom-text1 {
+    font-size: 20px;
+  }
+  
+  .main-bottom-text2 {
+    font-size: 25px;
   }
 
   #main-bottom-map-section {
@@ -203,6 +230,14 @@
     word-break: keep-all;
   }
 
+  .main-bottom-text1 {
+    font-size: 15px;
+  }
+  
+  .main-bottom-text2 {
+    font-size: 20px;
+  }
+
   #main-bottom-map-section {
     height: 500px;
   }
@@ -226,11 +261,12 @@
   .main-bottom-mobile-map-box {
     border: 1px solid #e5e5e5;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 10%);
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5vw;
   }
 
   .main-bottom-mobile-map {
@@ -240,14 +276,14 @@
 
   .main-bottom-mobile-map-box > h6 {
     margin: 1.89vw 0 0.54vw;
-    font-size: 8vw;
+    font-size: 6vw;
     font-family: "Raleway", sans-serif;
     color: #5da0d7;
     font-weight: 800;
   }
 
   .main-bottom-mobile-map-box > p {
-    font-size: 5.2vw;
+    font-size: 4vw;
     color: #000;
   }
 
@@ -256,7 +292,6 @@
     color: rgba(0, 0, 0, 0.5);
     margin: 1.39vw 0 3.89vw;
     display: inline-block;
-    font-weight: 600;
     text-align: center;
   }
 }

@@ -56,19 +56,23 @@ const setMapHeight = () => {
     map.style.height = width;
   });
 
+  const mobileWidthNumber = parseInt(window.getComputedStyle(mobileBox[0]).getPropertyValue("width"), 10);
+
   mobileBox.forEach((box) => {
     const style = window.getComputedStyle(box);
     const width = style.getPropertyValue("width");
-    const widthNumber = parseInt(width, 10);
+    // const widthNumber = parseInt(width, 10);
 
-    box.style.height = `${widthNumber * 1.6}px`;
+    box.style.height = `${mobileWidthNumber * 1.6}px`;
   });
+
+  const mobileMapWidth = window.getComputedStyle(mobileMap[0]).getPropertyValue("width");
 
   mobileMap.forEach((map) => {
     const style = window.getComputedStyle(map);
     const width = style.getPropertyValue("width");
 
-    map.style.height = width;
+    map.style.height = mobileMapWidth;
   });
 };
 
@@ -110,17 +114,21 @@ const setText = () => {
   // }
 
   if (mapSectionTop <= viewportHeight - 200) {
-    gsap.to(mapText, {
-      duration: 0.5,
-      marginTop: "50px",
-      opacity: 1,
-    });
+    if (mapText) {
+      gsap.to(mapText, {
+        duration: 0.5,
+        marginTop: "50px",
+        opacity: 1,
+      });
+    }
   } else {
-    gsap.to(mapText, {
-      duration: 0.5,
-      marginTop,
-      opacity: 0,
-    });
+    if (mapText) {
+      gsap.to(mapText, {
+        duration: 0.5,
+        marginTop,
+        opacity: 0,
+      });
+    }
   }
 };
 
