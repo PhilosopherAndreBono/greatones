@@ -40,6 +40,7 @@ const setMapHeight = () => {
   const map = document.querySelectorAll(".main-bottom-map");
   const mobileBox = document.querySelectorAll(".main-bottom-mobile-map-box");
   const mobileMap = document.querySelectorAll(".main-bottom-mobile-map");
+  const followBox = document.querySelectorAll(".main-bottom-follow-box");
 
   box.forEach((box) => {
     const style = window.getComputedStyle(box);
@@ -73,6 +74,13 @@ const setMapHeight = () => {
     const width = style.getPropertyValue("width");
 
     map.style.height = mobileMapWidth;
+  });
+
+  followBox.forEach((box) => {
+    const style = window.getComputedStyle(box);
+    const width = style.getPropertyValue("width");
+
+    box.style.height = width;
   });
 };
 
