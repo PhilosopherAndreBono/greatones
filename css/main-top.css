@@ -195,6 +195,7 @@
   box-sizing: border-box;
 }
 
+/* 모바일 화면에서 li 사이 선 */ 
 @media (max-width: 799px) {
   .main-top-section li {
       width: 100%;
@@ -270,6 +271,24 @@
   .main-top-section li p {
       font-size: 14px;
       line-height: 25px;
+  }
+}
+
+/* PC 버전 : li 사이 추가된 선 */ 
+.main-top-section li:not(:last-child):after {
+  content: "";
+  height: 310px;
+  width: 1px;
+  border-right: 1px dotted #cccccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 모바일 버전 : 선 제거 */ 
+@media (max-width: 799px) {
+  .main-top-section li:not(:last-child):after {
+    content: none;
   }
 }
 
