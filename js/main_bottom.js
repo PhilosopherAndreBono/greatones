@@ -33,11 +33,11 @@ const drinkInfo = [
   },
 ];
 
-const drink = new drinkApp("drinks-wrapper", drinkInfo);
+const drink = new drinkApp("main-bottom-drinks-wrapper", drinkInfo);
 
 const setMapHeight = () => {
   const box = document.querySelectorAll(".box");
-  const map = document.querySelectorAll(".map");
+  const map = document.querySelectorAll(".main-bottom-map");
 
   box.forEach((box) => {
     const style = window.getComputedStyle(box);
@@ -61,13 +61,13 @@ const setText = () => {
   const viewportWidth =
     window.innerWidth || document.documentElement.clientWidth;
 
-  const drinkSection = document.getElementById("drink-section");
+  const drinkSection = document.getElementById("main-bottom-drink-section");
   const drinkSectionTop = drinkSection.getBoundingClientRect().top;
-  const drinkText = document.querySelector(".drink-text");
+  const drinkText = document.querySelector(".main-bottom-drink-text");
 
-  const mapSection = document.getElementById("map-section");
+  const mapSection = document.getElementById("main-bottom-map-section");
   const mapSectionTop = mapSection.getBoundingClientRect().top;
-  const mapText = document.querySelector(".map-text");
+  const mapText = document.querySelector(".main-bottom-map-text");
 
   const marginTop =
     viewportWidth < 600

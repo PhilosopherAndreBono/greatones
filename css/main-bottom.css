@@ -4,7 +4,7 @@
   font-size: 50px;
 }
 
-#drink-section {
+#main-bottom-drink-section {
   width: 100%;
   height: 700px;
   display: flex;
@@ -15,12 +15,12 @@
   background-repeat: no-repeat;
 }
 
-.drink-text {
+.main-bottom-drink-text {
   /* opacity: 0; */
   margin-top: 50px;
 }
 
-.drink-title {
+.main-bottom-drink-title {
   text-align: Center;
   font-size: 65px;
   color: #1e1e1e;
@@ -30,19 +30,19 @@
   text-transform: uppercase;
 }
 
-.drink-title span {
+.main-bottom-drink-title span {
   color: #5da0d7;
   margin-right: -15px;
 }
 
-.drink-text p {
+.main-bottom-drink-text p {
   font-size: 26px;
   color: #000;
   font-weight: 500;
   text-align: Center;
 }
 
-#drinks-wrapper {
+#main-bottom-drinks-wrapper {
   width: 100%;
   height: 430px;
   position: relative;
@@ -55,12 +55,12 @@
   align-items: flex-end;
 }
 
-.text1 {
+.main-bottom-text1 {
   margin-top: 20px;
   font-weight: bold;
 }
 
-.text2 {
+.main-bottom-text2 {
   margin-top: 20px;
   font-weight: bold;
   font-size: 25px;
@@ -69,7 +69,7 @@
   text-align: center;
 }
 
-#map-section {
+#main-bottom-map-section {
   background-color: skyblue;
   margin-top: 150px;
   width: 100%;
@@ -79,13 +79,13 @@
   justify-content: space-between;
 }
 
-.map-text {
+.main-bottom-map-text {
   /* position: relative; */
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-.map-title {
+.main-bottom-map-title {
   text-align: Center;
   font-size: 65px;
   color: #1e1e1e;
@@ -95,26 +95,26 @@
   text-transform: uppercase;
 }
 
-.map-title span {
+.main-bottom-map-title span {
   color: #5da0d7;
   margin-right: -15px;
 }
 
-.map-text p {
+.main-bottom-map-text p {
   font-size: 26px;
   color: #000;
   font-weight: 500;
   text-align: Center;
 }
 
-#map-wrapper {
+#main-bottom-map-wrapper {
   margin: 0 auto;
   width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
-.box {
+.main-bottom-map-box {
   border: 1px solid #e5e5e5;
   box-shadow: 10px 10px 15px rgb(0 0 0 / 10%);
   width: 30%;
@@ -125,12 +125,12 @@
   margin-bottom: 100px;
 }
 
-.map {
+.main-bottom-map {
   margin-top: 5%;
   width: 90%;
 }
 
-.box > h6 {
+.main-bottom-map-box > h6 {
   margin: 1.89vw 0 0.54vw;
   font-size: 2vw;
   font-family: "Raleway", sans-serif;
@@ -138,12 +138,12 @@
   font-weight: 800;
 }
 
-.box > p {
+.main-bottom-map-box > p {
   font-size: 1.3vw;
   color: #000;
 }
 
-.box > span {
+.main-bottom-map-box > span {
   font-size: 1vw;
   color: rgba(0, 0, 0, 0.5);
   margin: 1.39vw 0 3.89vw;
@@ -153,16 +153,16 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
-  #drink-section {
+  #main-bottom-drink-section {
     height: 600px;
   }
 
-  #drinks-wrapper {
+  #main-bottom-drinks-wrapper {
     margin-top: 50px;
     height: 400px;
   }
 
-  .drink-title {
+  .main-bottom-drink-title {
     text-align: Center;
     font-size: 35px;
     color: #1e1e1e;
@@ -172,23 +172,23 @@
     text-transform: uppercase;
   }
 
-  .drink-title span {
+  .main-bottom-drink-title span {
     color: #5da0d7;
     margin-right: -8px;
   }
 
-  .drink-text p {
+  .main-bottom-drink-text p {
     font-size: 14px;
     color: #000;
     font-weight: 500;
     text-align: Center;
   }
 
-  #map-section {
+  #main-bottom-map-section {
     height: 600px;
   }
 
-  .map-title {
+  .main-bottom-map-title {
     text-align: Center;
     font-size: 35px;
     color: #1e1e1e;
@@ -198,12 +198,12 @@
     text-transform: uppercase;
   }
 
-  .map-title span {
+  .main-bottom-map-title span {
     color: #5da0d7;
     margin-right: -8px;
   }
 
-  .map-text p {
+  .main-bottom-map-text p {
     font-size: 14px;
     color: #000;
     font-weight: 500;
@@ -212,16 +212,16 @@
 }
 
 @media screen and (max-width: 600px) {
-  #drink-section {
+  #main-bottom-drink-section {
     height: 500px;
   }
 
-  #drinks-wrapper {
+  #main-bottom-drinks-wrapper {
     margin-top: 50px;
     height: 350px;
   }
 
-  .drink-title {
+  .main-bottom-drink-title {
     text-align: Center;
     font-size: 25px;
     color: #1e1e1e;
@@ -231,23 +231,23 @@
     text-transform: uppercase;
   }
 
-  .drink-title span {
+  .main-bottom-drink-title span {
     color: #5da0d7;
     margin-right: -5px;
   }
 
-  .drink-text p {
+  .main-bottom-drink-text p {
     font-size: 14px;
     color: #000;
     font-weight: 500;
     text-align: Center;
   }
 
-  #map-section {
+  #main-bottom-map-section {
     height: 500px;
   }
 
-  .map-title {
+  .main-bottom-map-title {
     text-align: Center;
     font-size: 25px;
     color: #1e1e1e;
@@ -257,12 +257,12 @@
     text-transform: uppercase;
   }
 
-  .map-title span {
+  .main-bottom-map-title span {
     color: #5da0d7;
     margin-right: -5px;
   }
 
-  .map-text p {
+  .main-bottom-map-text p {
     font-size: 14px;
     color: #000;
     font-weight: 500;

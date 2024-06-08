@@ -142,12 +142,12 @@ export default class drinkApp {
 
       const text1 = document.createElement("span");
       text1.textContent = `${this.drinkInfo[i].name}`;
-      text1.className = "text1";
+      text1.className = "main-bottom-text1";
       tag.appendChild(text1);
 
       const text2 = document.createElement("span");
       text2.textContent = `${this.drinkInfo[i].englishName}`;
-      text2.className = "text2";
+      text2.className = "main-bottom-text2";
       tag.appendChild(text2);
 
       const img = document.createElement("img");
