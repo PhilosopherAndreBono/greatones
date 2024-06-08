@@ -151,6 +151,10 @@ document.addEventListener("scroll", function () {
 });
 
 window.addEventListener("resize", function () {
-  drink.resetDrink();
-  setMapHeight();
+  const viewportWidth =
+  window.innerWidth || document.documentElement.clientWidth;
+  if (viewportWidth >= 799) {
+    drink.resetDrink();
+    setMapHeight();
+  }
 });
