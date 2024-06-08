@@ -55,6 +55,10 @@ body {
     cursor: pointer;
     border-bottom: solid 4px #5da0d8;
 }
+.nav-menu-link {
+  text-decoration: none; 
+  color: inherit; 
+}
 .nav-offcanvas {
     display: none;
 }
