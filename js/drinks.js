@@ -56,7 +56,7 @@ export default class drinkApp {
   setWrapper() {
     this.setSize();
     this.wrapper.style.opacity = 0;
-    this.wrapper.style.touchAction = "none";
+    // this.wrapper.style.touchAction = "none";
   }
 
   setSize() {
