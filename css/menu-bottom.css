@@ -1,3 +1,12 @@
+@import "reset.css";
+@font-face {
+  font-family: "TTHakgyoansimJiugaeR";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimJiugaeR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .menu-custom-card {
   background-color: #f4f5f6;
   border: none;
@@ -218,15 +227,6 @@
 }
 
 /*nav랑 footer css*/
-
-@import "reset.css";
-@font-face {
-  font-family: "TTHakgyoansimJiugaeR";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimJiugaeR.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
   font-family: "TTHakgyoansimJiugaeR", "NotoSans", sans-serif;
