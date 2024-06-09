@@ -312,7 +312,7 @@ body {
   display: none;
 }
 .offcanvas-header {
-  background-color: #5da0d8;
+  background-color: #d8bb5d;
   height: 10vh;
 }
 .offcanvas-header-text {
@@ -338,7 +338,7 @@ body {
 }
 
 /* 네브바 미디어 쿼리 - 테블릿, 모바일 순 */
-@media (max-width: 992px) {
+@media (max-width: 799px) {
   .nav-menu {
     display: none;
   }
