@@ -266,9 +266,10 @@ body {
   font-family: "TTHakgyoansimJiugaeR", "NotoSans", sans-serif;
 }
 
-/* nav CSS 정의 */
+/* nav css 정의 */
 .nav {
   padding: 1vh 10vw;
+  width: 100%;
 }
 .nav-logo:hover {
   cursor: pointer;
@@ -310,6 +311,10 @@ body {
   cursor: pointer;
   border-bottom: solid 4px #5da0d8;
 }
+.nav-menu-link {
+  text-decoration: none;
+  color: inherit;
+}
 .nav-offcanvas {
   display: none;
 }
@@ -339,8 +344,8 @@ body {
   transition-duration: 0.3s;
 }
 
-/* 네브바 미디어 쿼리 - 테블릿, 모바일 순 */
-@media (max-width: 992px) {
+/* 네브바 미디어쿼리 -테블릿, 모바일 순 */
+@media (max-width: 1279px) {
   .nav-menu {
     display: none;
   }
