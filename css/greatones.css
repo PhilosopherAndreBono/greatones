@@ -63,6 +63,14 @@ body {
   width: 390px;
 }
 
+.greatones-introduce-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
 .footer-container {
   opacity: 0;
 }
