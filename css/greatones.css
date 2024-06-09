@@ -61,6 +61,7 @@ body {
 
 .greatones-introduce p:last-child {
   width: 390px;
+  word-break: keep-all;
 }
 
 .greatones-introduce-link {
