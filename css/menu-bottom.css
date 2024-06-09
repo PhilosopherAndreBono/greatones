@@ -161,13 +161,14 @@ body {
 }
 
 .menu-bottom .slick-next {
-  right: -6%; /* 오른쪽 화살표 위치 조정 */
+  right: -5%; /* 오른쪽 화살표 위치 조정 */
 }
 
 .menu-bottom .autoplay img {
   width: 100%; /* width를 100%로 설정하여 가로 스크롤 방지 */
   height: auto; /* height를 auto로 설정 */
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
   object-fit: cover;
 }
 
@@ -254,7 +255,7 @@ body {
     left: 2.5% !important;
   }
   .menu-bottom .slick-next {
-    right: 1.5% !important;
+    right: 1.2% !important;
   }
 }
 
