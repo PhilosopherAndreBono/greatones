@@ -161,14 +161,13 @@ body {
 }
 
 .menu-bottom .slick-next {
-  right: -5%; /* 오른쪽 화살표 위치 조정 */
+  right: -6%; /* 오른쪽 화살표 위치 조정 */
 }
 
 .menu-bottom .autoplay img {
   width: 100%; /* width를 100%로 설정하여 가로 스크롤 방지 */
   height: auto; /* height를 auto로 설정 */
-  padding-left: 15px;
-  padding-right: 10px;
+  padding-left: 10px;
   object-fit: cover;
 }
 
@@ -205,6 +204,9 @@ body {
   .menu-custom-card {
     padding: 4px;
   }
+  .last-season-title h4 {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -216,7 +218,7 @@ body {
     padding: 2px;
   }
   .last-season-title h4 {
-    font: 30px;
+    font: 18px;
   }
 }
 /* 슬라이드 미디어 쿼리 */
@@ -255,7 +257,7 @@ body {
     left: 2.5% !important;
   }
   .menu-bottom .slick-next {
-    right: 1.2% !important;
+    right: 1.5% !important;
   }
 }
 
@@ -264,9 +266,10 @@ body {
   font-family: "TTHakgyoansimJiugaeR", "NotoSans", sans-serif;
 }
 
-/* nav CSS 정의 */
+/* nav css 정의 */
 .nav {
   padding: 1vh 10vw;
+  width: 100%;
 }
 .nav-logo:hover {
   cursor: pointer;
@@ -308,11 +311,15 @@ body {
   cursor: pointer;
   border-bottom: solid 4px #5da0d8;
 }
+.nav-menu-link {
+  text-decoration: none;
+  color: inherit;
+}
 .nav-offcanvas {
   display: none;
 }
 .offcanvas-header {
-  background-color: #d8bb5d;
+  background-color: #5da0d8;
   height: 10vh;
 }
 .offcanvas-header-text {
@@ -337,8 +344,8 @@ body {
   transition-duration: 0.3s;
 }
 
-/* 네브바 미디어 쿼리 - 테블릿, 모바일 순 */
-@media (max-width: 799px) {
+/* 네브바 미디어쿼리 -테블릿, 모바일 순 */
+@media (max-width: 1279px) {
   .nav-menu {
     display: none;
   }

@@ -57,7 +57,7 @@
       src="https://kit.fontawesome.com/2c827c8cca.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <link href="menu-top.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/menu-bottom.css" />
 
@@ -65,68 +65,93 @@
 
   <body>
     <nav class="nav">
-      <div class="nav-style">
-        <div class="nav-logo">
-          <img src="./src/logo-black-withCoffee.png" style="height: 65px" />
-        </div>
-        <div class="nav-logo-mediaQuery">
-          <img src="./src/logo-white.png" style="height: 55px; margin: 5px 0" />
-        </div>
-        <div class="nav-menu">
-          <h3 class="nav-menu-text">ABOUT</h3>
-          <h3 class="nav-menu-text">MENU</h3>
-          <h3 class="nav-menu-text">COMMUNITY</h3>
-        </div>
-        <div class="nav-sns">
-          <div class="nav-ico-box">
-            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i>
+        <div class="nav-style">
+          <div class="nav-logo">
+            <a href="/">
+              <img src="./src/logo-black-withCoffee.png" style="height: 65px" />
+            </a>
           </div>
-          <div class="nav-ico-box">
-            <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+          <div class="nav-logo-mediaQuery">
+            <a href="/">
+              <img
+                src="./src/logo-white.png"
+                style="height: 55px; margin: 5px 0"
+              />
+            </a>
           </div>
-          <div class="nav-ico-box">
-            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          <div class="nav-menu">
+            <a href="about.html" class="nav-menu-link">
+              <h3 class="nav-menu-text">ABOUT</h3>
+            </a>
+            <a href="menu.html" class="nav-menu-link">
+              <h3 class="nav-menu-text">MENU</h3>
+            </a>
+            <a href="community.html" class="nav-menu-link">
+              <h3 class="nav-menu-text">COMMUNITY</h3>
+            </a>
+            <a href="greatones.html" class="nav-menu-link">
+              <h3 class="nav-menu-text">GREATONES</h3>
+            </a>
           </div>
-        </div>
-
-        <!-- 테블릿, 모바일용 nav 오프캔버스-->
-        <div class="nav-offcanvas">
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasTop"
-            aria-controls="offcanvasTop"
-          >
-            <i class="fa-solid fa-bars" style="color: #ffffff"></i>
-          </button>
-          <div
-            class="offcanvas offcanvas-top"
-            tabindex="-1"
-            id="offcanvasTop"
-            aria-labelledby="offcanvasTopLabel"
-          >
-            <div class="offcanvas-header">
-              <h4 class="offcanvas-header-text" id="offcanvasTopLabel">
-                CATEGORY
-              </h4>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+          <div class="nav-sns">
+            <div class="nav-ico-box">
+              <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i>
             </div>
-            <div class="offcanvas-body">
-              <div class="nav-offcanvas-container">
-                <p class="nav-offcanvas-menu">ABOUT</p>
-                <p class="nav-offcanvas-menu">MENU</p>
-                <p class="nav-offcanvas-menu">COMMUNITY</p>
+            <div class="nav-ico-box">
+              <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+            </div>
+            <div class="nav-ico-box">
+              <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+            </div>
+          </div>
+  
+          <!-- 테블릿, 모바일용 nav 오프캔버스 -->
+          <div class="nav-offcanvas">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-top"
+              tabindex="-1"
+              id="offcanvasTop"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="offcanvas-header">
+                <h4 class="offcanvas-header-text" id="offcanvasTopLabel">
+                  CATEGORY
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="nav-offcanvas-container">
+                  <a href="about.html" class="nav-menu-link">
+                    <p class="nav-offcanvas-menu">ABOUT</p>
+                  </a>
+                  <a href="menu.html" class="nav-menu-link">
+                    <p class="nav-offcanvas-menu">MENU</p>
+                  </a>
+                  <a href="community.html" class="nav-menu-link">
+                    <p class="nav-offcanvas-menu">COMMUNITY</p>
+                  </a>
+                  <a href="greatones.html" class="nav-menu-link">
+                    <p class="nav-offcanvas-menu">GREATONES</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </nav>
 
     <menu-top>
@@ -587,7 +612,7 @@
         <div class="last-season-title text-center">
           <!--타이틀-->
           <h4>
-            눈나커피's <span>Last Season Menu</span>
+            눈나's <span>Last Season Menu</span>
             <div>____</div>
           </h4>
         </div>
