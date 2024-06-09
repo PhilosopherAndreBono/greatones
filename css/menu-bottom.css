@@ -54,13 +54,13 @@ body {
 
 .menu-title {
   color: #000000;
-  font-size: 15px;
+  font-size: 13px;
   padding: 5px 0px;
 }
 
 .menu-ice {
   color: #000000;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 @media (min-width: 1400px) {
@@ -106,7 +106,7 @@ body {
 }
 
 .menu-info-title > h5 {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   color: #000;
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .menu-info-text > p {
-  font-size: 13.5px;
+  font-size: 12px;
   font-weight: 530;
   color: #ffff;
   line-height: 22px;
@@ -210,6 +210,10 @@ body {
   }
   .last-season-title h4 {
     font-size: 26px;
+  }
+  .menu-custom-card-img {
+    width: 120px;
+    height: 208px;
   }
 }
 
