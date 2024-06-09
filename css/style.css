@@ -1,229 +1,231 @@
 @import "reset.css";
 @font-face {
-    font-family: 'TTHakgyoansimJiugaeR';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimJiugaeR.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "TTHakgyoansimJiugaeR";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimJiugaeR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 body {
-    font-family: 'TTHakgyoansimJiugaeR','NotoSans', sans-serif;
+  font-family: "TTHakgyoansimJiugaeR", "NotoSans", sans-serif;
 }
 /* nav css 정의 */
 .nav {
-    padding: 1vh 10vw;
-    width: 100%;
+  padding: 1vh 10vw;
+  width: 100%;
 }
 .nav-logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .nav-logo-mediaQuery {
-    display: none;
+  display: none;
 }
 .nav-ico-box {
-    display: flex;
-    background-color: #adafaf;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+  display: flex;
+  background-color: #adafaf;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 .nav-ico-box:hover {
-    border: solid 2px #999999;
+  border: solid 2px #999999;
 }
 .nav-style {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-menu {
-    display: flex;
+  display: flex;
 }
 .nav-sns {
-    display: flex;
+  display: flex;
 }
 .nav-menu-text {
-    margin: 0 50px;
-}
-.nav-menu-text:hover {
-    color: #5da0d8;
-    cursor: pointer;
-    border-bottom: solid 4px #5da0d8;
-}
-.nav-menu-link {
-  text-decoration: none; 
-  color: inherit; 
-}
-.nav-offcanvas {
-    display: none;
-}
-.offcanvas-header {
-    background-color: #5da0d8;
-    height: 10vh;
-}
-.offcanvas-header-text {
-    color: white;
-    font-size: 23px;
-    font-weight: bolder;
-}
-.nav-offcanvas-container {
-    height: 50vh;
-    padding: 30px 20px;
-    text-align: center;
-    font-size: 27px;
-    font-weight: bolder;
-    color: #5da0d8;
-}
-.nav-offcanvas-menu {
-    margin-bottom: 20px;
-}
-.nav-offcanvas-menu:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition-duration: 0.3s;
+  margin: 0 50px;
 }
 
+/* .nav-menu-text h3 {
+  display: inline-block;
+} */
+
+.nav-menu-text:hover {
+  color: #5da0d8;
+  cursor: pointer;
+  border-bottom: solid 4px #5da0d8;
+}
+.nav-menu-link {
+  text-decoration: none;
+  color: inherit;
+  margin-top: 16px;
+  height: 30px;
+}
+.nav-offcanvas {
+  display: none;
+}
+.offcanvas-header {
+  background-color: #5da0d8;
+  height: 10vh;
+}
+.offcanvas-header-text {
+  color: white;
+  font-size: 23px;
+  font-weight: bolder;
+}
+.nav-offcanvas-container {
+  height: 50vh;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bolder;
+  color: #5da0d8;
+}
+.nav-offcanvas-menu {
+  margin-bottom: 20px;
+}
+.nav-offcanvas-menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
 
 /* 네브바 미디어쿼리 -테블릿, 모바일 순 */
 @media (max-width: 1279px) {
-    .nav-menu {
-        display: none;
-    }
-    .nav-sns {
-        display: none;
-    }
-    .nav-offcanvas {
-        display: block;
-    }
-    .nav {
-        width: 100%;
-        padding: 0;
-        display: flex;
-        justify-content: space-evenly;
-        background-color: #5da0d8;
-    }
-    .offcanvas.offcanvas-top {
-        height: 100%;
-        width: 100%;
-    }
-    .btn-primary {
-        border: none;
-        background-color: #5da0d8;
-    }
-    .nav-logo-img {
-        filter: invert(100%);
-    }
-    .nav-logo-mediaQuery {
-        display: block;
-        margin-right: 30vw;
-    }
-    .nav-logo {
-        display: none;
-    }
-
+  .nav-menu {
+    display: none;
+  }
+  .nav-sns {
+    display: none;
+  }
+  .nav-offcanvas {
+    display: block;
+  }
+  .nav {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #5da0d8;
+  }
+  .offcanvas.offcanvas-top {
+    height: 100%;
+    width: 100%;
+  }
+  .btn-primary {
+    border: none;
+    background-color: #5da0d8;
+  }
+  .nav-logo-img {
+    filter: invert(100%);
+  }
+  .nav-logo-mediaQuery {
+    display: block;
+    margin-right: 30vw;
+  }
+  .nav-logo {
+    display: none;
+  }
 }
-
 
 /* footer css 정의 */
 .footer-container {
-    background-color: #221f20;
-    height: 400px;
-    position : relative;
-    bottom: 0px;
-    font-family: 'GmarketSansMedium';
+  background-color: #221f20;
+  height: 400px;
+  position: relative;
+  bottom: 0px;
+  font-family: "GmarketSansMedium";
 }
 .footer-items {
-    border: solid 1px #221f2000;
-    width: 90vw;
-    height: 30vh;
-    position: relative;
-    top: 50px;
-    left: 50px;
+  border: solid 1px #221f2000;
+  width: 90vw;
+  height: 30vh;
+  position: relative;
+  top: 50px;
+  left: 50px;
 }
 .footer-menu-container {
-    display: flex;
-    color: white;
-    margin-left: 30px;
-    margin-top: 10px;
+  display: flex;
+  color: white;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 .footer-menu {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
 .footer-secondline-container {
-    margin: 13px 30px;
-    display: flex;
+  margin: 13px 30px;
+  display: flex;
 }
 .footer-secondline-location {
-    color: white;
-    margin-left: 30px;
+  color: white;
+  margin-left: 30px;
 }
 .footer-copyright {
-    color: #858585;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-size: small;
+  color: #858585;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: small;
 }
 .footer-info-container {
-    display: flex;
-    color: white;
-    margin-left: 30px;
-    margin-top: 10px;
+  display: flex;
+  color: white;
+  margin-left: 30px;
 }
 .footer-info {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
 .footer-media-logo {
-    display: none;
+  display: none;
 }
-
-
 
 /* footer 미디어쿼리 */
 @media (max-width: 1279px) {
-    .footer-container {
-        background-color: #5da0d8;
-        height: 400px;
-        position : relative;
-    }
-    .footer-menu-container {
-        display: none;
-    }
-    .footer-secondline-container {
-        display: none;
-    }
-    .footer-info-none {
-        display: none;
-    }
-    .footer-info-container {
-        display: flex;
-        color: white;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer-items {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%, -50%); 
-        border: double 4px #ffffff;
-        height: 40vh;
-    }
-    .footer-copyright {
-        display: none;
-    }
-    .footer-media-logo {
-        display: block;
-        width: 50vw;
-        margin-top: 10px;
-    }
-    .footer-media-logo-container {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
+  .footer-container {
+    background-color: #5da0d8;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-menu-container {
+    display: none;
+  }
+  .footer-secondline-container {
+    display: none;
+  }
+  .footer-info-none {
+    display: none;
+  }
+  .footer-info-container {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-items {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: double 4px #ffffff;
+    height: 100%;
+  }
+  .footer-copyright {
+    display: none;
+  }
+  .footer-media-logo {
+    display: block;
+    width: 150px;
+    margin-top: 5px;
+  }
+  .footer-media-logo-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 }
