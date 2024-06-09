@@ -2,7 +2,7 @@ const members = document.querySelector(".greatones-members");
 const pickGreatOnes = document.querySelectorAll(".greatones");
 const greatOnes = [];
 const startPosition = {
-  left: "-500px",
+  left: "-1500px",
   top: "300px",
 };
 const footer = document.querySelector(".footer-container");
@@ -56,6 +56,7 @@ const showOne = (one) => {
     duration: 1,
     left: one.left,
     top: one.top,
+    opacity: 1,
   });
 };
 
