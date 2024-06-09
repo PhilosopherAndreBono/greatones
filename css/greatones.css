@@ -47,23 +47,30 @@ body {
 }
 
 .greatones-introduce {
-  display: flex;
+  float: left;
 }
 
 .greatones-introduce p {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .greatones-introduce p:first-child {
-  display: block;
-  width: 90px;
+  width: 45px;
+}
+
+.greatones-introduce p:last-child {
+  width: 390px;
 }
 
 .footer-container {
-    opacity: 0;
+  opacity: 0;
 }
 
 @media screen and (min-width: 799px) and (max-width: 1279px) {
+  .greatones-introduce p:last-child {
+    width: 390px;
+  }
 }
 
 @media (max-width: 799px) {
@@ -76,7 +83,10 @@ body {
   }
 
   .greatones-introduce p:first-child {
-    display: block;
-    width: 70px;
+    width: 34px;
+  }
+
+  .greatones-introduce p:last-child {
+    width: 310px;
   }
 }

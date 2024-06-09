@@ -7,23 +7,28 @@ const startPosition = {
 };
 const footer = document.querySelector(".footer-container");
 
-const setMembers = () => {
-  let totalHeight = 0;
+let totalHeight = 0;
 
-  pickGreatOnes.forEach((greatOne) => {
-    totalHeight = totalHeight + greatOne.offsetHeight + 50 * 2;
+const setMembers = (members) => {
+  pickGreatOnes.forEach((one, i) => {
+    totalHeight = totalHeight + one.offsetHeight + 50 * 2;
   });
 
   members.style.height = `${totalHeight}px`;
 };
 
 const setOnes = (pick, start, members) => {
-  pick.forEach((one, i) => {
+  const pickArray = Array.from(pick);
+  pickArray.forEach((one, i) => {
     const left = `${members.offsetWidth / 2 - one.offsetWidth / 2}px`;
+    const totalHeight = pickArray
+      .slice(0, i)
+      .reduce((acc, curr) => acc + curr.offsetHeight, 0);
+    const top = `${(i + 1) * 100 + totalHeight}px`;
     const spec = {
       tag: one,
       left,
-      top: (i + 1) * 100 + i * one.offsetHeight,
+      top,
     };
     greatOnes.push(spec);
 
@@ -77,7 +82,7 @@ const waitForImagesToLoad = (parent, selector) => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   await waitForImagesToLoad(document, ".greatones img").then(() => {
-    setMembers();
+    setMembers(members);
     setOnes(pickGreatOnes, startPosition, members);
     showGreatOnes(greatOnes);
   });
