@@ -59,6 +59,10 @@ body {
   width: 90px;
 }
 
+.footer-container {
+    opacity: 0;
+}
+
 @media screen and (min-width: 799px) and (max-width: 1279px) {
 }
 

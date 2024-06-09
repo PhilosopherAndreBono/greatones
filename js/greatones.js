@@ -5,6 +5,7 @@ const startPosition = {
   left: "-200px",
   top: "300px",
 };
+const footer = document.querySelector(".footer-container");
 
 const setMembers = () => {
   let totalHeight = 0;
@@ -53,12 +54,36 @@ const showOne = (one) => {
   });
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  setMembers();
-  setOnes(pickGreatOnes, startPosition, members);
-  showGreatOnes(greatOnes);
+const showFooter = (footer) => {
+    footer.style.opacity = 1;
+}
+
+const waitForImagesToLoad = (parent, selector) => {
+  const imgs = parent.querySelectorAll(selector);
+  const imgPromises = Array.from(imgs).map(
+    (img) =>
+      new Promise((resolve) => {
+        if (img.complete) {
+          resolve();
+        } else {
+          img.addEventListener("load", resolve);
+          img.addEventListener("error", resolve);
+        }
+      })
+  );
+
+  return Promise.all(imgPromises);
+};
+
+document.addEventListener("DOMContentLoaded", async () => {
+  await waitForImagesToLoad(document, ".greatones img").then(() => {
+    setMembers();
+    setOnes(pickGreatOnes, startPosition, members);
+    showGreatOnes(greatOnes);
+  });
+  showFooter(footer);
 });
 
 window.addEventListener("resize", function () {
-    resetOnesPosition(pickGreatOnes, members);
+  resetOnesPosition(pickGreatOnes, members);
 });
