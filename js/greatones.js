@@ -55,8 +55,8 @@ const showOne = (one) => {
 };
 
 const showFooter = (footer) => {
-    footer.style.opacity = 1;
-}
+  footer.style.opacity = 1;
+};
 
 const waitForImagesToLoad = (parent, selector) => {
   const imgs = parent.querySelectorAll(selector);
