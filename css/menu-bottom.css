@@ -290,13 +290,13 @@ body {
 .nav-ico-box:hover {
   border: solid 2px #999999;
 }
-.nav-style {
+ .nav-style {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} 
 .nav-menu {
   display: flex;
 }
@@ -345,7 +345,11 @@ body {
 }
 
 /* 네브바 미디어쿼리 -테블릿, 모바일 순 */
-@media (max-width: 1279px) {
+
+
+
+
+@media (max-width: 799px) {
   .nav-menu {
     display: none;
   }
@@ -361,6 +365,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: #5da0d8;
+    
   }
   .offcanvas.offcanvas-top {
     height: 100%;
@@ -380,6 +385,7 @@ body {
   .nav-logo {
     display: none;
   }
+  
 }
 
 /* footer CSS 정의 */

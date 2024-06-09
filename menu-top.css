@@ -149,9 +149,7 @@ display: none; /* 기본적으로 숨기기 */
     flex-grow: 1;
     
 }
-.menutop-bo-cate li:not(:last-child) {
-    border-right: 1px solid ;
-}
+
 
 
 .menutop-bo-cate .menutop-bo-cate-first {
@@ -175,12 +173,15 @@ display: none; /* 기본적으로 숨기기 */
     color: #5da0d7;
 
 }
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+@media screen and (min-width: 800px) and (max-width: 1900px) {
     .menutop-nav-link{ 
         font-size: 12px;
         text-align: center;
     }
-    
+    .menutop-bo-cate li:not(:last-child) {
+        border-right: 1px solid ;
+    }
 }
 
 
@@ -221,6 +222,7 @@ display: none; /* 기본적으로 숨기기 */
 .dropdown-item:hover {
    background-color: #5DA0D7;
 }
+
 
 @media screen and (max-width: 799px) {
     .menutop-sub_title h4 {
@@ -341,36 +343,17 @@ display: none; /* 기본적으로 숨기기 */
         margin: 0 auto;
         justify-content: space-between;
     }
-    .menutop-inner-whitelogo{
-        align-self: center; /* 이미지 컨테이너를 수직 중앙으로 배치 */
-        margin-left: 20px; 
-
-    }
-    .menutop-inner-whitelogo img{
-        max-width: 100%; /* 이미지 크기를 부모 요소에 맞게 조절 */
-        height: auto; /* 이미지 비율 유지 */
-        margin-top: 100px;
-    }
-
+ 
 }
 @media screen and (max-width: 799px) {
     .menutop-subvisual {
-        
+
         background-image: url(./src/menu-top-pic.jpg) !important;
         background-color: rgba(0, 0, 0, 0.4);
         background-blend-mode: multiply;
         
     }
-    .menutop-inner-whitelogo{
-        display: flex;
-        justify-content: center; /* 이미지 컨테이너를 수직 중앙으로 배치 */
-        
-    }
-    .menutop-inner-whitelogo img{
-        max-width: 100%; /* 이미지 크기를 부모 요소에 맞게 조절 */
-        height: auto; /* 이미지 비율 유지 */
-        
-    }
+
 
 
     
