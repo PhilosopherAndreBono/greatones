@@ -58,6 +58,7 @@
   height: 80vh;
   width: inherit;
   position: relative;
+  margin-bottom: 0;
 }
 .about-second-titles {
   display: block;
@@ -102,4 +103,14 @@
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 524px) {
+  .about-second-container {
+    border: solid 2px rgba(255, 255, 255, 0);
+    height: 80vh;
+    width: inherit;
+    position: relative;
+    margin-bottom: 70px;
+  }
 }
