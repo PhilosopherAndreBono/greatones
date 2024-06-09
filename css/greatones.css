@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.greatones-container {
+  text-align: center;
+  margin: 50px;
+}
+
+.greatones-container h1 {
+  font-size: 50px;
+}
+
+.greatones-members {
+  width: 100%;
+  position: relative;
+}
+
+.greatones {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  position: absolute;
+}
+
+.greatones img {
+  width: 200px;
+  border-radius: 5%;
+}
+
+.greatones h2 {
+  margin: 15px 0;
+  font-size: 30px;
+}
+
+.greatones-text-box {
+  text-align: left;
+}
+
+.greatones-text-box p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.greatones-introduce {
+  display: flex;
+}
+
+.greatones-introduce p {
+  display: block;
+}
+
+.greatones-introduce p:first-child {
+  display: block;
+  width: 90px;
+}
+
+@media screen and (min-width: 799px) and (max-width: 1279px) {
+}
+
+@media (max-width: 799px) {
+  .greatones {
+    width: 400px;
+  }
+
+  .greatones-text-box p {
+    font-size: 15px;
+  }
+
+  .greatones-introduce p:first-child {
+    display: block;
+    width: 70px;
+  }
+}
