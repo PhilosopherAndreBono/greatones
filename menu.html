@@ -281,6 +281,16 @@
                 src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"
               ></script>
               <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function () {
+                  var offcanvasElements = document.querySelectorAll('.offcanvas');
+                  offcanvasElements.forEach(function (offcanvas) {
+                    new bootstrap.Offcanvas(offcanvas, {
+                      backdrop: false
+                    });
+                  });
+                });
+              </script>
+              <script type="text/javascript">
                 $(document).ready(function () {
                   function initSlick() {
                     if (window.innerWidth <= 768) {
