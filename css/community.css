@@ -1,117 +1,128 @@
+html,
+body {
+  overflow-x: hidden; /* 가로 스크롤 제거 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 박스 모델 설정 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* 모든 요소와 가상 요소의 박스 모델을 상속 */
+}
+
 /* about의 전체 컨테이너 (이 컨테이너를 빠져나가는 요소 없도록 설정함) */
 .community-whole-container {
-    height: 230vh;
-    width: 100%;
-    box-sizing: border-box;
+  height: 230vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 .community-whole-container * {
-    max-width: 100%;
-    max-height: 100%;
-    box-sizing: inherit; /* 부모의 box-sizing 속성을 상속받음 */
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: inherit; /* 부모의 box-sizing 속성을 상속받음 */
 }
 
-
-
-
-.community-first-container{
-    border: solid 1px rgba(255, 255, 255, 0);
-    background-image: url("https://www.hiocoffee.com/sub/img/bg_sf_05.jpg");
-    height: 50vh;
-    width: inherit;
-    position: relative;
+.community-first-container {
+  border: solid 1px rgba(255, 255, 255, 0);
+  background-image: url("https://www.hiocoffee.com/sub/img/bg_sf_05.jpg");
+  height: 50vh;
+  width: inherit;
+  position: relative;
 }
 .community-first-titles {
-    display: block;
+  display: block;
 
-
-    margin: 13vh 0 0 10vw;
+  margin: 13vh 0 0 10vw;
 }
 .community-first-title-firstline {
-    font-size: 9vh;
-    color: white;
-    margin-bottom: 2vh;
+  font-size: 9vh;
+  color: white;
+  margin-bottom: 2vh;
 }
 .community-first-title-secondline {
-    font-size: 2vh;
-    color: rgba(206, 206, 206, 0.614);
-    letter-spacing: 7px;
+  font-size: 2vh;
+  color: rgba(206, 206, 206, 0.614);
+  letter-spacing: 7px;
 }
 .community-first-category {
-    width: inherit;
-    position: absolute;
-    bottom: 0;
-    height: 13vh;
-    background-color: rgba(44, 44, 44, 0.671);
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  height: 13vh;
+  background-color: rgba(44, 44, 44, 0.671);
 }
 .community-first-category-text {
-    color: white;
-    display: flex;
-    margin: 6vh 10vw;
+  color: white;
+  display: flex;
+  margin: 6vh 10vw;
 }
 .community-first-category-text-style {
-    margin-right: 27px;
+  margin-right: 27px;
 }
 .community-first-category-text-style:hover {
-    color: #5da0d8;
-    cursor: pointer;
-    border-bottom: solid 4px #5da0d8;
+  color: #5da0d8;
+  cursor: pointer;
+  border-bottom: solid 4px #5da0d8;
 }
 
-
-table, th, td {
-    border: 2px solid rgb(202, 202, 202);
-    vertical-align: middle;
+table,
+th,
+td {
+  border: 2px solid rgb(202, 202, 202);
+  vertical-align: middle;
 }
 table {
-    height: 100vh;
+  height: 100vh;
 }
 tr {
-    height: 60px;
+  height: 60px;
 }
 th {
-    width: 15vw;
+  width: 15vw;
 }
 td {
-    text-align: left;
+  text-align: left;
 }
 
 .community-container-wrap {
-    border: solid 2px rgba(255, 255, 255, 0);
-    height: 170vh;
-    display: block;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+  border: solid 2px rgba(255, 255, 255, 0);
+  height: 170vh;
+  display: block;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 .community-table {
-    width: 75vw;
-    margin: 90vh 0 10vh 0 ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%); 
+  width: 75vw;
+  margin: 90vh 0 10vh 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .input-num {
-    width: 6vw;
+  width: 6vw;
 }
 .input-contents {
-    width: 100%;
-    padding-right: 8px;
-    height: 20vh;
+  width: 100%;
+  padding-right: 8px;
+  height: 20vh;
 }
 .personal-agree {
-    height: 3vh;
-    display: block;
-    margin-top: 110vh;
+  height: 3vh;
+  display: block;
+  margin-top: 110vh;
 }
 .enter-btn {
-    margin: 10vh 0;
-    height: 50px;
-    width: 200px;
-    background-color: #5da0d8;
-    color: white;
-    border: none;
+  margin: 10vh 0;
+  height: 50px;
+  width: 200px;
+  background-color: #5da0d8;
+  color: white;
+  border: none;
 }
 .enter-btn:hover {
-    background-color: #3e7caf;
+  background-color: #3e7caf;
 }
